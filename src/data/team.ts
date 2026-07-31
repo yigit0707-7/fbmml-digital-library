@@ -135,8 +135,8 @@ export const teamData: TeamMember[] = [
       'MSc: Firat University, Electronics-Computer Education (2009 - 2011)',
       'PhD: Firat University, Software Engineering (2012 - 2016)'
     ],
-    researchAreasTr: ['Öznitelik Mühendisliği', 'Multimedya Adli Bilişim', 'İnsan Davranışı Analizi', 'Yapay Zekâ'],
-    researchAreasEn: ['Feature Engineering', 'Multimedia Forensics', 'Human Behavior Analysis', 'Artificial Intelligence'],
+    researchAreasTr: ['Öznitelik Mühendisliği', 'İnsan Davranışı Analizi', 'Yapay Zekâ', 'Derin Öğrenme'],
+    researchAreasEn: ['Feature Engineering', 'Human Behavior Analysis', 'Artificial Intelligence', 'Deep Learning'],
     selectedPublications: [
       {
         title: 'A new dataset for EEG abnormality detection MTOUH',
