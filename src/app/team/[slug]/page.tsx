@@ -5,7 +5,6 @@ import { teamData, TeamMember } from '@/data/team';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import AcademicLinks from '@/components/AcademicLinks';
 import { ArrowLeft, BookOpen, GraduationCap, MapPin, ExternalLink } from 'lucide-react';
 import React, { use } from 'react';
 import './profile.css';
@@ -33,10 +32,9 @@ export default function ProfilePage({ params }: { params: Promise<{ slug: string
         </div>
         <div className="profile-header-info">
           <h1 className="profile-name">{member.academicTitle} {member.fullName}</h1>
-          <div className="profile-institution">
+          <div className="profile-institution" style={{ marginBottom: 0 }}>
             <MapPin size={18} /> {getLocalizedField(member, 'institution')} • {getLocalizedField(member, 'department')}
           </div>
-          <AcademicLinks member={member} />
         </div>
       </div>
 
