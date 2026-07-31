@@ -8,9 +8,6 @@ import { LanguageProvider } from "@/context/LanguageContext";
 export const metadata: Metadata = {
   title: "Turkish Brain Team | Dijital Kütüphane",
   description: "Turkish Brain Team akademik dijital kütüphane ve araştırma platformu.",
-  icons: {
-    icon: "/brand/tbt-logo.png",
-  },
   openGraph: {
     title: "Turkish Brain Team Dijital Kütüphane",
     description: "Beyin sinyalleri, yapay zekâ, biyomedikal veri analizi ve akademik kaynaklara odaklanan dijital araştırma kütüphanesi.",
