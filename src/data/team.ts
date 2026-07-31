@@ -57,7 +57,7 @@ export const teamData: TeamMember[] = [
     departmentTr: 'Adli Bilişim Mühendisliği',
     departmentEn: 'Digital Forensics Engineering',
     photo: '/team/sengul-dogan.jpg',
-    bioTr: 'Prof. Dr. Şengül Doğan, Fırat Üniversitesi Teknoloji Fakültesi Adli Bilişim Mühendisliği bölümünde görev yapan deneyimli bir araştırmacıdır. Çalışmaları ağırlıklı olarak yapay zekâ, açıklanabilir makine öğrenmesi, biyomedikal sinyal işleme, EEG dalgalarının analizi ve dijital adli tıp (digital forensics) uygulamaları üzerine yoğunlaşmıştır. Özellikle nörolojik rahatsızlıkların erken tespiti ve duygu durum analizi için yenilikçi öznitelik mühendisliği (feature engineering) yöntemleri geliştirmesiyle tanınır.',
+    bioTr: 'Prof. Dr. Şengül Doğan, Fırat Üniversitesi Teknoloji Fakültesi Adli Bilişim Mühendisliği bölümünde görev yapan deneyimli bir araştırmacıdır. Çalışmaları ağırlıklı olarak yapay zekâ, açıklanabilir makine öğrenmesi, biyomedikal sinyal işleme, EEG dalgalarının analizi ve adli bilişim (digital forensics) uygulamaları üzerine yoğunlaşmıştır. Özellikle nörolojik rahatsızlıkların erken tespiti ve duygu durum analizi için yenilikçi öznitelik mühendisliği (feature engineering) yöntemleri geliştirmesiyle tanınır.',
     bioEn: 'Prof. Dr. Şengül Doğan is an experienced researcher at Firat University, Faculty of Technology, Department of Digital Forensics Engineering. Her work primarily focuses on artificial intelligence, explainable machine learning, biomedical signal processing, EEG wave analysis, and digital forensics applications. She is well known for developing innovative feature engineering methods for the early detection of neurological disorders and emotion analysis.',
     educationTr: [
       'Lisans: Fırat Üniversitesi, Bilgisayar Öğretmenliği (1998 - 2002)',
@@ -69,8 +69,8 @@ export const teamData: TeamMember[] = [
       'MSc: Firat University, Bioengineering (2004 - 2007)',
       'PhD: Firat University, Electrical and Electronics Engineering (2007 - 2011)'
     ],
-    researchAreasTr: ['Dijital Adli Tıp', 'Mobil Adli Tıp', 'Görüntü İşleme', 'Bilgi Güvenliği', 'Biyomedikal Sinyal İşleme', 'EEG Analizi'],
-    researchAreasEn: ['Digital Forensics', 'Mobile Forensics', 'Image Processing', 'Information Security', 'Biomedical Signal Processing', 'EEG Analysis'],
+    researchAreasTr: ['Adli Bilişim', 'Görüntü İşleme', 'Bilgi Güvenliği', 'Biyomedikal Sinyal İşleme', 'EEG Analizi'],
+    researchAreasEn: ['Digital Forensics', 'Image Processing', 'Information Security', 'Biomedical Signal Processing', 'EEG Analysis'],
     selectedPublications: [
       {
         title: 'Automated accurate emotion classification using Clefia pattern-based features with EEG signals',

@@ -42,7 +42,7 @@ export const tr = {
       'Derin Öğrenme',
       'Biyomedikal Yapay Zekâ',
       'Görüntü ve Sinyal İşleme',
-      'Dijital Adli Bilişim',
+      'Adli Bilişim',
       'Örüntü Tanıma'
     ],
     profile: {
