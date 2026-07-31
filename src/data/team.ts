@@ -82,7 +82,7 @@ export const teamData: TeamMember[] = [
     selectedPublications: [
       {
         title: 'Automated accurate emotion classification using Clefia pattern-based features with EEG signals',
-        authors: 'Abdullah Doğan, Prabal Datta Barua, Mehmet Baygın, Türker Tuncer, Şengül Doğan, Orhan Yaman, Ali Hikmet Doğru, U. Rajendra Acharya',
+        authors: 'Abdullah Doğan, Prabal Datta Barua, Mehmet Baygın, Türker Tuncer, Şengül Doğan, Orhan Yaman, Ali Hilmi Doğan, U. Rajendra Acharya',
         year: 2024,
         journal: 'International Journal of Healthcare Management',
         doi: '10.1080/20479700.2022.2141694',
@@ -147,7 +147,7 @@ export const teamData: TeamMember[] = [
       },
       {
         title: 'Automated accurate emotion classification using Clefia pattern-based features with EEG signals',
-        authors: 'Abdullah Doğan, Prabal Datta Barua, Mehmet Baygın, Türker Tuncer, Şengül Doğan, Orhan Yaman, Ali Hikmet Doğru, U. Rajendra Acharya',
+        authors: 'Abdullah Doğan, Prabal Datta Barua, Mehmet Baygın, Türker Tuncer, Şengül Doğan, Orhan Yaman, Ali Hilmi Doğan, U. Rajendra Acharya',
         year: 2024,
         journal: 'International Journal of Healthcare Management',
         doi: '10.1080/20479700.2022.2141694',
