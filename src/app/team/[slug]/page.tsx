@@ -5,7 +5,8 @@ import { teamData, TeamMember } from '@/data/team';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, BookOpen, GraduationCap, MapPin, Link as LinkIcon, ExternalLink } from 'lucide-react';
+import AcademicLinks from '@/components/AcademicLinks';
+import { ArrowLeft, BookOpen, GraduationCap, MapPin, ExternalLink } from 'lucide-react';
 import React, { use } from 'react';
 import './profile.css';
 
@@ -35,13 +36,7 @@ export default function ProfilePage({ params }: { params: Promise<{ slug: string
           <div className="profile-institution">
             <MapPin size={18} /> {getLocalizedField(member, 'institution')} • {getLocalizedField(member, 'department')}
           </div>
-          <div className="profile-links">
-            {member.links.map((link, idx) => (
-              <a key={idx} href={link.url} target="_blank" rel="noopener noreferrer" className="profile-link-btn">
-                <LinkIcon size={16} /> {link.name}
-              </a>
-            ))}
-          </div>
+          <AcademicLinks member={member} />
         </div>
       </div>
 
@@ -95,17 +90,19 @@ export default function ProfilePage({ params }: { params: Promise<{ slug: string
         </div>
       </div>
 
-      <div className="profile-sources">
-        <p>{t.team.profile.sourcesTitle}</p>
-        <ul className="sources-list">
-          {member.sources.map((src, idx) => (
-            <li key={idx}>
-              <a href={src.url} target="_blank" rel="noopener noreferrer">{src.name}</a>
-            </li>
-          ))}
-        </ul>
-        <p className="sources-updated">{t.team.profile.sourcesInfo} {member.lastUpdated} {t.team.profile.sourcesUpdated}</p>
-      </div>
+      {member.sources && member.sources.length > 0 && (
+        <div className="profile-sources">
+          <p>{t.team.profile.sourcesTitle}</p>
+          <ul className="sources-list">
+            {member.sources.map((src, idx) => (
+              <li key={idx}>
+                <a href={src.url} target="_blank" rel="noopener noreferrer">{src.name}</a>
+              </li>
+            ))}
+          </ul>
+          <p className="sources-updated">{t.team.profile.sourcesInfo} {member.lastUpdated} {t.team.profile.sourcesUpdated}</p>
+        </div>
+      )}
     </div>
   );
 }

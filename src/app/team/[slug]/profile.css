@@ -65,6 +65,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
 }
 
 .profile-link-btn {
@@ -78,6 +81,9 @@
   font-size: 0.9rem;
   font-weight: 600;
   transition: var(--transition);
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
 }
 
 .profile-link-btn:hover {

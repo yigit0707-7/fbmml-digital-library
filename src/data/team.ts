@@ -40,8 +40,16 @@ export interface TeamMember {
   selectedPublications: Publication[];
   projectsTr?: string[];
   projectsEn?: string[];
-  links: Link[];
-  sources: Source[];
+  links: {
+    academicProfile?: string;
+    academicProfileLabelTr?: string;
+    academicProfileLabelEn?: string;
+    scholar?: string;
+    orcid?: string;
+    researchGate?: string;
+    linkedin?: string;
+  };
+  sources?: Source[];
   lastUpdated: string;
 }
 
@@ -96,13 +104,12 @@ export const teamData: TeamMember[] = [
         tag: 'Açıklanabilir YZ (Explainable AI)'
       }
     ],
-    links: [
-      { name: 'AVESİS', url: 'https://avesis.firat.edu.tr/sengul', icon: 'university' },
-      { name: 'ORCID', url: 'https://orcid.org/0000-0002-3162-446X', icon: 'orcid' }
-    ],
-    sources: [
-      { name: 'Fırat Üniversitesi AVESİS', url: 'https://avesis.firat.edu.tr' }
-    ],
+    links: {
+      academicProfile: 'https://avesis.firat.edu.tr/sengul',
+      academicProfileLabelTr: 'AVESİS',
+      academicProfileLabelEn: 'AVESİS',
+      orcid: 'https://orcid.org/0000-0002-3162-446X',
+    },
     lastUpdated: '2026-07-28'
   },
   {
@@ -148,15 +155,13 @@ export const teamData: TeamMember[] = [
         tag: 'Duygu Sınıflandırma (Emotion Classification)'
       }
     ],
-    links: [
-      { name: 'AVESİS', url: 'https://avesis.firat.edu.tr/turkertuncer', icon: 'university' },
-      { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=G6XqD3QAAAAJ', icon: 'scholar' },
-      { name: 'ORCID', url: 'https://orcid.org/0000-0003-3848-8008', icon: 'orcid' }
-    ],
-    sources: [
-      { name: 'Fırat Üniversitesi AVESİS', url: 'https://avesis.firat.edu.tr/turkertuncer' },
-      { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=G6XqD3QAAAAJ' }
-    ],
+    links: {
+      academicProfile: 'https://avesis.firat.edu.tr/turkertuncer',
+      academicProfileLabelTr: 'AVESİS',
+      academicProfileLabelEn: 'AVESİS',
+      scholar: 'https://scholar.google.com/citations?user=G6XqD3QAAAAJ',
+      orcid: 'https://orcid.org/0000-0003-3848-8008',
+    },
     lastUpdated: '2026-07-28'
   },
   {
@@ -170,8 +175,8 @@ export const teamData: TeamMember[] = [
     departmentTr: 'Bilgisayar Mühendisliği',
     departmentEn: 'Computer Engineering',
     photo: '/team/mehmet-baygin.jpg',
-    bioTr: 'Doç. Dr. Mehmet Baygın, Erzurum Teknik Üniversitesi Bilgisayar Mühendisliği Bölümü\'nde görev yapmaktadır. Turkish Brain Team (TBT) ile sürdürdüğü akademik iş birlikleri kapsamında makine öğrenmesi, medikal yapay zekâ uygulamaları ve özellik mühendisliği konularında önemli projelere imza atmaktadır.',
-    bioEn: 'Assoc. Prof. Dr. Mehmet Baygın works at Erzurum Technical University, Department of Computer Engineering. Within the scope of his academic collaborations with the Turkish Brain Team (TBT), he undertakes significant projects in machine learning, medical artificial intelligence applications, and feature engineering.',
+    bioTr: 'Doç. Dr. Mehmet Baygın, Erzurum Teknik Üniversitesi Bilgisayar Mühendisliği Bölümü\'nde görev yapmaktadır. Akademik çalışmaları makine öğrenmesi, yapay zekâ, biyomedikal veri analizi, sinyal ve görüntü işleme ile özellik mühendisliği alanlarına odaklanmaktadır.',
+    bioEn: 'Assoc. Prof. Dr. Mehmet Baygın works at Erzurum Technical University, Department of Computer Engineering. His academic studies focus on machine learning, artificial intelligence, biomedical data analysis, signal and image processing, and feature engineering.',
     educationTr: [
       'Lisans: Erzurum Teknik Üniversitesi, Bilgisayar Mühendisliği (2010 - 2014)',
       'Yüksek Lisans: Fırat Üniversitesi, Bilgisayar Mühendisliği (2015 - 2017)',
@@ -193,13 +198,9 @@ export const teamData: TeamMember[] = [
         tag: 'Derin Öğrenme (Deep Learning)'
       }
     ],
-    links: [
-      { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=undefined', icon: 'scholar' },
-      { name: 'ORCID', url: 'https://orcid.org/0000-0003-4457-5503', icon: 'orcid' }
-    ],
-    sources: [
-      { name: 'Erzurum Teknik Üniversitesi AVESİS', url: 'https://avesis.erzurum.edu.tr' }
-    ],
+    links: {
+      orcid: 'https://orcid.org/0000-0003-4457-5503',
+    },
     lastUpdated: '2026-07-28'
   },
   {
@@ -213,8 +214,8 @@ export const teamData: TeamMember[] = [
     departmentTr: 'Elektronik ve Otomasyon',
     departmentEn: 'Electronics and Automation',
     photo: '/team/omer-faruk-goktas.jpg',
-    bioTr: 'Öğr. Gör. Dr. Ömer Faruk Göktaş, Ankara Yıldırım Beyazıt Üniversitesi Teknik Bilimler MYO Elektronik ve Otomasyon Bölümü\'nde görev almaktadır. Veri bilimi, elektronik sistemler ve otonom süreçler üzerine yoğunlaşan Göktaş, TBT ekibi ile veri işleme ve makine öğrenmesi uygulamaları konularında araştırma iş birlikleri yürütmektedir.',
-    bioEn: 'Lecturer Dr. Ömer Faruk Göktaş works at Ankara Yıldırım Beyazıt University, Vocational School of Technical Sciences, Department of Electronics and Automation. Focusing on data science, electronic systems, and autonomous processes, Göktaş conducts research collaborations with the TBT team on data processing and machine learning applications.',
+    bioTr: 'Öğr. Gör. Dr. Ömer Faruk Göktaş, Ankara Yıldırım Beyazıt Üniversitesi Teknik Bilimler MYO Elektronik ve Otomasyon Bölümü\'nde görev almaktadır. Veri bilimi, elektronik sistemler ve otonom süreçler üzerine yoğunlaşan Göktaş, Akademik çalışmaları veri bilimi, elektronik sistemler, makine öğrenmesi ve otonom süreçler üzerine yoğunlaşmaktadır.',
+    bioEn: 'Lecturer Dr. Ömer Faruk Göktaş works at Ankara Yıldırım Beyazıt University, Vocational School of Technical Sciences, Department of Electronics and Automation. Focusing on data science, electronic systems, and autonomous processes, His academic studies focus on data science, electronic systems, machine learning, and autonomous processes.',
     educationTr: [
       'Lisans: Ankara Yıldırım Beyazıt Üniversitesi, Elektronik Mühendisliği (2011 - 2015)',
       'Yüksek Lisans: Fırat Üniversitesi, Yazılım Mühendisliği (2016 - 2018)',
@@ -236,13 +237,12 @@ export const teamData: TeamMember[] = [
         tag: 'Otomasyon (Automation)'
       }
     ],
-    links: [
-      { name: 'AVESİS', url: 'https://avesis.aybu.edu.tr/ofgoktas', icon: 'university' },
-      { name: 'ORCID', url: 'https://orcid.org/0000-0002-6072-3097', icon: 'orcid' }
-    ],
-    sources: [
-      { name: 'Ankara Yıldırım Beyazıt Üniversitesi AVESİS', url: 'https://avesis.aybu.edu.tr/ofgoktas' }
-    ],
+    links: {
+      academicProfile: 'https://avesis.aybu.edu.tr/ofgoktas',
+      academicProfileLabelTr: 'AVESİS',
+      academicProfileLabelEn: 'AVESİS',
+      orcid: 'https://orcid.org/0000-0002-6072-3097',
+    },
     lastUpdated: '2026-07-28'
   },
   {
@@ -281,12 +281,11 @@ export const teamData: TeamMember[] = [
         tag: 'Yapay Zekâ (Artificial Intelligence)'
       }
     ],
-    links: [
-      { name: 'AVESİS', url: 'https://abs.firat.edu.tr/tr/btasci', icon: 'university' }
-    ],
-    sources: [
-      { name: 'Fırat Üniversitesi Akademik Bilgi Sistemi', url: 'https://abs.firat.edu.tr/tr/btasci' }
-    ],
+    links: {
+      academicProfile: 'https://abs.firat.edu.tr/tr/btasci',
+      academicProfileLabelTr: 'Fırat ABS',
+      academicProfileLabelEn: 'Academic Profile',
+    },
     lastUpdated: '2026-07-31'
   },
   {
@@ -323,12 +322,11 @@ export const teamData: TeamMember[] = [
         tag: 'Nöroloji (Neurology)'
       }
     ],
-    links: [
-      { name: 'AVESİS', url: 'https://abs.firat.edu.tr/tr/itasci', icon: 'university' }
-    ],
-    sources: [
-      { name: 'Fırat Üniversitesi Akademik Bilgi Sistemi', url: 'https://abs.firat.edu.tr/tr/itasci' }
-    ],
+    links: {
+      academicProfile: 'https://abs.firat.edu.tr/tr/itasci',
+      academicProfileLabelTr: 'Fırat ABS',
+      academicProfileLabelEn: 'Academic Profile',
+    },
     lastUpdated: '2026-07-31'
   },
   {
@@ -365,13 +363,12 @@ export const teamData: TeamMember[] = [
         tag: 'Psikiyatri (Psychiatry)'
       }
     ],
-    links: [
-      { name: 'Kurum Profili', url: 'https://elazigsehir.saglik.gov.tr/EN-718555/specialist-gulay-tasci.html', icon: 'hospital' },
-      { name: 'ORCID', url: 'https://orcid.org/0000-0003-2078-0182', icon: 'orcid' }
-    ],
-    sources: [
-      { name: 'Hastane resmî sayfası', url: 'https://elazigsehir.saglik.gov.tr/EN-718555/specialist-gulay-tasci.html' }
-    ],
+    links: {
+      academicProfile: 'https://elazigsehir.saglik.gov.tr/EN-718555/specialist-gulay-tasci.html',
+      academicProfileLabelTr: 'Kurum Profili',
+      academicProfileLabelEn: 'Academic Profile',
+      orcid: 'https://orcid.org/0000-0003-2078-0182',
+    },
     lastUpdated: '2026-07-31'
   }
 ];
