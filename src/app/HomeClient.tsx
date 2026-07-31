@@ -13,7 +13,7 @@ export default function HomeClient({ books }: { books: any[] }) {
     <div className="home-container container">
       <section className="hero-section" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <div className="animate-fade-in" style={{ marginBottom: '2rem' }}>
-          <img src="/brand/logoyeni.png" alt="FBMML Logo" style={{ width: '100%', maxWidth: '400px', height: 'auto' }} />
+          <img src="/brand/tbt-logo.png" alt="TBT Logo" style={{ width: '100%', maxWidth: '400px', height: 'auto' }} />
         </div>
         <h2 className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '2rem', marginBottom: '1rem', color: 'var(--text-primary)', marginTop: '0' }}>
           {t.home.title}

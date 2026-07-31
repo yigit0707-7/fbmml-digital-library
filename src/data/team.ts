@@ -170,8 +170,8 @@ export const teamData: TeamMember[] = [
     departmentTr: 'Bilgisayar Mühendisliği',
     departmentEn: 'Computer Engineering',
     photo: '/team/mehmet-baygin.jpg',
-    bioTr: 'Doç. Dr. Mehmet Baygın, Erzurum Teknik Üniversitesi Bilgisayar Mühendisliği Bölümü\'nde görev yapmaktadır. Fırat Brain Mind Machine Lab (FBMML) ile sürdürdüğü akademik iş birlikleri kapsamında makine öğrenmesi, medikal yapay zekâ uygulamaları ve özellik mühendisliği konularında önemli projelere imza atmaktadır.',
-    bioEn: 'Assoc. Prof. Dr. Mehmet Baygın works at Erzurum Technical University, Department of Computer Engineering. Within the scope of his academic collaborations with the Firat Brain Mind Machine Lab (FBMML), he undertakes significant projects in machine learning, medical artificial intelligence applications, and feature engineering.',
+    bioTr: 'Doç. Dr. Mehmet Baygın, Erzurum Teknik Üniversitesi Bilgisayar Mühendisliği Bölümü\'nde görev yapmaktadır. Turkish Brain Team (TBT) ile sürdürdüğü akademik iş birlikleri kapsamında makine öğrenmesi, medikal yapay zekâ uygulamaları ve özellik mühendisliği konularında önemli projelere imza atmaktadır.',
+    bioEn: 'Assoc. Prof. Dr. Mehmet Baygın works at Erzurum Technical University, Department of Computer Engineering. Within the scope of his academic collaborations with the Turkish Brain Team (TBT), he undertakes significant projects in machine learning, medical artificial intelligence applications, and feature engineering.',
     educationTr: [
       'Lisans: Erzurum Teknik Üniversitesi, Bilgisayar Mühendisliği (2010 - 2014)',
       'Yüksek Lisans: Fırat Üniversitesi, Bilgisayar Mühendisliği (2015 - 2017)',
@@ -213,8 +213,8 @@ export const teamData: TeamMember[] = [
     departmentTr: 'Elektronik ve Otomasyon',
     departmentEn: 'Electronics and Automation',
     photo: '/team/omer-faruk-goktas.jpg',
-    bioTr: 'Öğr. Gör. Dr. Ömer Faruk Göktaş, Ankara Yıldırım Beyazıt Üniversitesi Teknik Bilimler MYO Elektronik ve Otomasyon Bölümü\'nde görev almaktadır. Veri bilimi, elektronik sistemler ve otonom süreçler üzerine yoğunlaşan Göktaş, FBMML ekibi ile veri işleme ve makine öğrenmesi uygulamaları konularında araştırma iş birlikleri yürütmektedir.',
-    bioEn: 'Lecturer Dr. Ömer Faruk Göktaş works at Ankara Yıldırım Beyazıt University, Vocational School of Technical Sciences, Department of Electronics and Automation. Focusing on data science, electronic systems, and autonomous processes, Göktaş conducts research collaborations with the FBMML team on data processing and machine learning applications.',
+    bioTr: 'Öğr. Gör. Dr. Ömer Faruk Göktaş, Ankara Yıldırım Beyazıt Üniversitesi Teknik Bilimler MYO Elektronik ve Otomasyon Bölümü\'nde görev almaktadır. Veri bilimi, elektronik sistemler ve otonom süreçler üzerine yoğunlaşan Göktaş, TBT ekibi ile veri işleme ve makine öğrenmesi uygulamaları konularında araştırma iş birlikleri yürütmektedir.',
+    bioEn: 'Lecturer Dr. Ömer Faruk Göktaş works at Ankara Yıldırım Beyazıt University, Vocational School of Technical Sciences, Department of Electronics and Automation. Focusing on data science, electronic systems, and autonomous processes, Göktaş conducts research collaborations with the TBT team on data processing and machine learning applications.',
     educationTr: [
       'Lisans: Ankara Yıldırım Beyazıt Üniversitesi, Elektronik Mühendisliği (2011 - 2015)',
       'Yüksek Lisans: Fırat Üniversitesi, Yazılım Mühendisliği (2016 - 2018)',

@@ -25,7 +25,7 @@ export default function TeamPage() {
       <section className="hero-section">
         <div className="neural-bg"></div>
         <div className="container hero-content" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <img src="/brand/logoyeni.png" alt="FBMML Logo" style={{ width: '100%', maxWidth: '350px', height: 'auto', marginBottom: '2rem' }} />
+          <img src="/brand/tbt-logo.png" alt="TBT Logo" style={{ width: '100%', maxWidth: '350px', height: 'auto', marginBottom: '2rem' }} />
           <h2 className="hero-subtitle" style={{ marginTop: 0 }}>{t.team.labShort}</h2>
           <p className="hero-desc">{t.team.labDesc}</p>
           <div className="research-tags">

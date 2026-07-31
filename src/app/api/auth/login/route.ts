@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     }
 
     const cookieStore = await cookies()
-    cookieStore.set('admin_session', process.env.AUTH_SECRET as string, {
+    cookieStore.set('tbt-session', process.env.AUTH_SECRET as string, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'lax',

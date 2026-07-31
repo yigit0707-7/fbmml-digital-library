@@ -12,7 +12,7 @@ export async function POST(request: Request): Promise<NextResponse> {
       onBeforeGenerateToken: async (pathname) => {
         // Admin authentication check
         const cookieStore = await cookies();
-        const adminSession = cookieStore.get('admin_session');
+        const adminSession = cookieStore.get('tbt-session');
         if (!adminSession || adminSession.value !== process.env.AUTH_SECRET) {
           throw new Error('Unauthorized');
         }

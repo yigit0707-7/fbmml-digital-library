@@ -26,11 +26,11 @@ export const en = {
     noSummary: 'There is no summary available for this book.',
     readBtn: 'Read Book',
     downloadPdf: 'Download PDF',
-    noCover: 'FBMML'
+    noCover: 'TBT'
   },
   team: {
-    labName: 'Firat Brain Mind Machine Lab',
-    labShort: 'FBMML',
+    labName: 'Turkish Brain Team',
+    labShort: 'TBT',
     labDesc: 'An interdisciplinary academic research team conducting studies in brain signals, artificial intelligence, explainable machine learning, biomedical signal processing, and pattern recognition.',
     collaborativePubs: 'Collaborative Research and Highlighted Publications',
     viewPub: 'View Publication',
@@ -57,7 +57,7 @@ export const en = {
     }
   },
   footer: {
-    labName: 'Firat Brain Mind Machine Lab',
+    labName: 'Turkish Brain Team',
     desc: 'Digital Library',
     links: 'Quick Links',
     researchAreas: 'Research Areas',

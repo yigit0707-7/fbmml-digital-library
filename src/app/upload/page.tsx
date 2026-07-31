@@ -100,7 +100,7 @@ export default function UploadPage() {
         <div className="glass-panel" style={{ padding: '4rem', maxWidth: '500px', margin: '0 auto' }}>
           <CheckCircle size={64} style={{ color: 'var(--accent-primary)', margin: '0 auto 2rem' }} />
           <h2>Kitap Başarıyla Yüklendi!</h2>
-          <p>Yeni eseriniz FBMML Kütüphanesine eklendi.</p>
+          <p>Yeni eseriniz TBT Kütüphanesine eklendi.</p>
           <button className="btn-primary" onClick={() => setSuccess(false)} style={{ marginTop: '2rem' }}>
             Yeni Kitap Yükle
           </button>

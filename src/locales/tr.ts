@@ -26,11 +26,11 @@ export const tr = {
     noSummary: 'Bu kitap için bir özet bulunmuyor.',
     readBtn: 'Kitabı Oku',
     downloadPdf: 'PDF İndir',
-    noCover: 'FBMML'
+    noCover: 'TBT'
   },
   team: {
-    labName: 'Fırat Brain Mind Machine Lab',
-    labShort: 'FBMML',
+    labName: 'Turkish Brain Team',
+    labShort: 'TBT',
     labDesc: 'Beyin sinyalleri, yapay zekâ, açıklanabilir makine öğrenmesi, biyomedikal sinyal işleme ve örüntü tanıma alanlarında disiplinler arası araştırmalar yürüten akademik araştırma ekibi.',
     collaborativePubs: 'Ortak Araştırmalar ve Öne Çıkan Yayınlar',
     viewPub: 'Yayını Görüntüle',
@@ -57,7 +57,7 @@ export const tr = {
     }
   },
   footer: {
-    labName: 'Fırat Brain Mind Machine Lab',
+    labName: 'Turkish Brain Team',
     desc: 'Dijital Kütüphane',
     links: 'Hızlı Bağlantılar',
     researchAreas: 'Araştırma Alanları',

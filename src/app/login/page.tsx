@@ -57,7 +57,7 @@ export default function LoginPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 style={{ width: '100%', padding: '0.75rem 1rem 0.75rem 2.5rem', borderRadius: '8px', border: '1px solid var(--border-color)', background: 'var(--card-bg)', color: 'var(--text-primary)' }}
-                placeholder="admin@fbmml.org"
+                placeholder="admin@tbt.org"
               />
             </div>
           </div>

@@ -6,19 +6,19 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata: Metadata = {
-  title: "Fırat Brain Mind Machine Lab | Dijital Kütüphane",
-  description: "Fırat Brain Mind Machine Lab akademik dijital kütüphane ve araştırma platformu.",
+  title: "Turkish Brain Team | Dijital Kütüphane",
+  description: "Turkish Brain Team akademik dijital kütüphane ve araştırma platformu.",
   icons: {
-    icon: "/brand/logoyeni.png",
+    icon: "/brand/tbt-logo.png",
   },
   openGraph: {
-    title: "Fırat Brain Mind Machine Lab Dijital Kütüphane",
+    title: "Turkish Brain Team Dijital Kütüphane",
     description: "Beyin sinyalleri, yapay zekâ, biyomedikal veri analizi ve akademik kaynaklara odaklanan dijital araştırma kütüphanesi.",
-    url: "https://fbmml-dijital-kutuphane.vercel.app",
-    siteName: "FBMML",
+    url: "https://turkish-brain-team.vercel.app",
+    siteName: "TBT",
     images: [
       {
-        url: "/brand/logoyeni.png",
+        url: "/brand/tbt-logo.png",
         width: 300,
         height: 300,
       }
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="tr" suppressHydrationWarning>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem storageKey="tbt-theme">
           <LanguageProvider>
             <Navbar />
             <main className="main-content">

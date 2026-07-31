@@ -36,15 +36,15 @@ export default function Navbar() {
         <Link href="/" className="navbar-brand">
           <div className="brand-logo-container">
             <Image 
-              src="/brand/logoyeni.png" 
-              alt="Fırat Brain Mind Machine Lab logosu" 
+              src="/brand/tbt-logo.png" 
+              alt="Turkish Brain Team logosu" 
               width={70} 
               height={70}
               className="brand-logo"
             />
           </div>
           <div className="brand-text">
-            <span className="brand-title">Fırat Brain Mind Machine Lab</span>
+            <span className="brand-title">Turkish Brain Team</span>
             <span className="brand-subtitle">Dijital Kütüphane</span>
           </div>
         </Link>

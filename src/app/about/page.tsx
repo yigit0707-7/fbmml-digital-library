@@ -5,7 +5,7 @@ export default function AboutPage() {
     <div className="container animate-fade-in" style={{ paddingTop: '2rem', paddingBottom: '4rem', maxWidth: '800px' }}>
       <div className="text-center" style={{ marginBottom: '3rem' }}>
         <h1 className="text-gradient">Hakkımızda</h1>
-        <p className="text-secondary">Fırat Brain Mind Machine Lab</p>
+        <p className="text-secondary">Turkish Brain Team</p>
       </div>
 
       <div className="glass-panel" style={{ padding: '3rem', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
@@ -15,7 +15,7 @@ export default function AboutPage() {
             <h2 style={{ margin: 0 }}>Misyonumuz</h2>
           </div>
           <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-            FBMML (Fırat Brain Mind Machine Lab), yapay zeka, derin öğrenme, makine öğrenmesi ve beyin-bilgisayar arayüzleri gibi alanlarda ileri düzey araştırmalar yürütmek amacıyla kurulmuştur. Geliştirdiğimiz bu dijital kütüphane projesi ile, araştırmacılarımızın kaynaklara daha hızlı ve premium bir arayüz ile erişmesini amaçlıyoruz.
+            TBT (Turkish Brain Team), yapay zeka, derin öğrenme, makine öğrenmesi ve beyin-bilgisayar arayüzleri gibi alanlarda ileri düzey araştırmalar yürütmek amacıyla kurulmuştur. Geliştirdiğimiz bu dijital kütüphane projesi ile, araştırmacılarımızın kaynaklara daha hızlı ve premium bir arayüz ile erişmesini amaçlıyoruz.
           </p>
         </section>
 

@@ -6,7 +6,7 @@ import { del } from '@vercel/blob'
 export async function DELETE(request: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     const cookieStore = await cookies()
-    const adminSession = cookieStore.get('admin_session')
+    const adminSession = cookieStore.get('tbt-session')
     if (!adminSession || adminSession.value !== process.env.AUTH_SECRET) {
       return NextResponse.json({ error: 'Yetkisiz erişim' }, { status: 401 })
     }
@@ -38,7 +38,7 @@ export async function DELETE(request: Request, { params }: { params: Promise<{ i
 export async function PUT(request: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     const cookieStore = await cookies()
-    const adminSession = cookieStore.get('admin_session')
+    const adminSession = cookieStore.get('tbt-session')
     if (!adminSession || adminSession.value !== process.env.AUTH_SECRET) {
       return NextResponse.json({ error: 'Yetkisiz erişim' }, { status: 401 })
     }

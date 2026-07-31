@@ -18,7 +18,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguageState] = useState<Language>('tr');
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('language') as Language;
+    const savedLang = localStorage.getItem('tbt-language') as Language;
     if (savedLang && (savedLang === 'tr' || savedLang === 'en')) {
       setLanguageState(savedLang);
     }
@@ -26,7 +26,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('language', lang);
+    localStorage.setItem('tbt-language', lang);
   };
 
   const t = language === 'tr' ? tr : en;

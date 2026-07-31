@@ -5,7 +5,7 @@ import { cookies } from 'next/headers'
 export async function POST(request: Request) {
   try {
     const cookieStore = await cookies()
-    const adminSession = cookieStore.get('admin_session')
+    const adminSession = cookieStore.get('tbt-session')
     if (!adminSession || adminSession.value !== process.env.AUTH_SECRET) {
       return NextResponse.json({ error: 'Yetkisiz erişim' }, { status: 401 })
     }

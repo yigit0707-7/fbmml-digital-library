@@ -6,7 +6,7 @@ export function middleware(request: NextRequest) {
   const isBooksMutation = request.nextUrl.pathname.startsWith('/api/books') && request.method !== 'GET';
 
   if (isUploadRoute || isBooksMutation) {
-    const adminSession = request.cookies.get('admin_session')
+    const adminSession = request.cookies.get('tbt-session')
     
     if (!adminSession || adminSession.value !== process.env.AUTH_SECRET) {
       if (request.nextUrl.pathname.startsWith('/api/')) {
