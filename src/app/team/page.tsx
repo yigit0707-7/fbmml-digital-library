@@ -91,11 +91,6 @@ export default function TeamPage() {
                 <span className="pub-year">{pub.year}</span>
                 <span className="pub-journal">{pub.journal}</span>
               </div>
-              {pub.url && (
-                <a href={pub.url} target="_blank" rel="noopener noreferrer" className="pub-link">
-                  <ExternalLink size={16} /> {t.team.viewPub}
-                </a>
-              )}
             </div>
           ))}
         </div>

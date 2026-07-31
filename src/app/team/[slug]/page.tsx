@@ -55,11 +55,6 @@ export default function ProfilePage({ params }: { params: Promise<{ slug: string
                   <p className="pub-authors">{pub.authors}</p>
                   <div className="pub-meta-bottom">
                     <span>{pub.journal}, {pub.year}</span>
-                    {pub.url && (
-                      <a href={pub.url} target="_blank" rel="noopener noreferrer" className="pub-url">
-                        <ExternalLink size={14} /> {t.team.viewPub}
-                      </a>
-                    )}
                   </div>
                 </div>
               ))}
