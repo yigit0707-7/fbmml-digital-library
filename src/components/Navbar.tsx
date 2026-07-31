@@ -1,27 +1,52 @@
 "use client";
 
 import Link from 'next/link'
-import { BookOpen, Upload, Users, Home, Sun, Moon, Monitor, Globe } from 'lucide-react'
+import { BookOpen, Upload, Users, Home, Sun, Moon, Monitor, Globe, LogOut } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useLanguage } from '@/context/LanguageContext'
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import './Navbar.css'
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const { language, setLanguage, t } = useLanguage();
   const [mounted, setMounted] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     setMounted(true);
+    fetch('/api/auth/check')
+      .then(res => res.json())
+      .then(data => setIsAdmin(data.isAdmin))
+      .catch(() => setIsAdmin(false));
   }, []);
+
+  const handleLogout = async () => {
+    await fetch('/api/auth/logout', { method: 'POST' });
+    setIsAdmin(false);
+    window.location.href = '/';
+  }
 
   return (
     <nav className="navbar glass-panel">
       <div className="navbar-container container">
-        <Link href="/" className="navbar-logo">
-          <BookOpen className="logo-icon" />
-          <span className="text-gradient">FBMML</span>
+        <Link href="/" className="navbar-brand">
+          <div className="brand-logo-container">
+            <Image 
+              src="/brand/logoyeni.png" 
+              alt="Fırat Brain Mind Machine Lab logosu" 
+              width={70} 
+              height={70}
+              className="brand-logo"
+            />
+          </div>
+          <div className="brand-text">
+            <span className="brand-title">Fırat Brain Mind Machine Lab</span>
+            <span className="brand-subtitle">Dijital Kütüphane</span>
+          </div>
         </Link>
         
         <div className="navbar-links">
@@ -66,9 +91,16 @@ export default function Navbar() {
             </button>
           </div>
 
-          <Link href="/upload" className="btn-primary upload-btn">
-            <Upload size={18} /> {t.nav.upload}
-          </Link>
+          {mounted && isAdmin && (
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <Link href="/upload" className="btn-primary upload-btn">
+                <Upload size={18} /> {t.nav.upload}
+              </Link>
+              <button onClick={handleLogout} className="btn-secondary" title="Çıkış Yap" style={{ padding: '0.5rem 0.75rem', borderRadius: '8px', background: 'var(--card-bg)', border: '1px solid var(--border-color)', color: 'var(--text-primary)', cursor: 'pointer' }}>
+                <LogOut size={18} />
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </nav>

@@ -18,25 +18,15 @@ export default function TeamPage() {
   const leader = teamData.find(m => m.slug === 'sengul-dogan') as TeamMember;
   const members = teamData.filter(m => m.slug !== 'sengul-dogan');
 
-  const researchTags = [
-    'EEG Sinyal İşleme',
-    'Açıklanabilir Yapay Zekâ',
-    'Özellik Mühendisliği',
-    'Makine Öğrenmesi',
-    'Derin Öğrenme',
-    'Biyomedikal Yapay Zekâ',
-    'Görüntü ve Sinyal İşleme',
-    'Dijital Adli Bilişim',
-    'Örüntü Tanıma'
-  ];
+  const researchTags = t.team.researchTags;
 
   return (
     <div className="team-page animate-fade-in">
       <section className="hero-section">
         <div className="neural-bg"></div>
-        <div className="container hero-content">
-          <h1 className="hero-title text-gradient">{t.team.labName}</h1>
-          <h2 className="hero-subtitle">{t.team.labShort}</h2>
+        <div className="container hero-content" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <img src="/brand/logoyeni.png" alt="FBMML Logo" style={{ width: '100%', maxWidth: '350px', height: 'auto', marginBottom: '2rem' }} />
+          <h2 className="hero-subtitle" style={{ marginTop: 0 }}>{t.team.labShort}</h2>
           <p className="hero-desc">{t.team.labDesc}</p>
           <div className="research-tags">
             {researchTags.map((tag, idx) => (

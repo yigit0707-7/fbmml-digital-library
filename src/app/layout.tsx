@@ -6,8 +6,24 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata: Metadata = {
-  title: "FBMML Dijital Kütüphane & Araştırma Laboratuvarı",
-  description: "Fırat Brain Mind Machine Lab Özel Dijital Kütüphanesi ve Ekip Bilgileri",
+  title: "Fırat Brain Mind Machine Lab | Dijital Kütüphane",
+  description: "Fırat Brain Mind Machine Lab akademik dijital kütüphane ve araştırma platformu.",
+  icons: {
+    icon: "/brand/logoyeni.png",
+  },
+  openGraph: {
+    title: "Fırat Brain Mind Machine Lab Dijital Kütüphane",
+    description: "Beyin sinyalleri, yapay zekâ, biyomedikal veri analizi ve akademik kaynaklara odaklanan dijital araştırma kütüphanesi.",
+    url: "https://fbmml-dijital-kutuphane.vercel.app",
+    siteName: "FBMML",
+    images: [
+      {
+        url: "/brand/logoyeni.png",
+        width: 300,
+        height: 300,
+      }
+    ]
+  }
 };
 
 export default function RootLayout({

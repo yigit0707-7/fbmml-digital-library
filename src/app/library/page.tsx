@@ -1,15 +1,24 @@
 import { prisma } from '@/lib/prisma'
 import LibraryClient from './LibraryClient'
 
+export const dynamic = 'force-dynamic'
+
 export default async function LibraryPage() {
-  const books = await prisma.book.findMany({
-    include: { category: true },
-    orderBy: { title: 'asc' }
-  })
-  
-  const categories = await prisma.category.findMany({
-    orderBy: { name: 'asc' }
-  })
+  let books: any[] = []
+  let categories: any[] = []
+
+  try {
+    books = await prisma.book.findMany({
+      include: { category: true },
+      orderBy: { title: 'asc' }
+    })
+    
+    categories = await prisma.category.findMany({
+      orderBy: { name: 'asc' }
+    })
+  } catch (error) {
+    console.error('Database query failed during build/render:', error)
+  }
 
   return <LibraryClient initialBooks={books} categories={categories} />
 }

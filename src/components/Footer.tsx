@@ -11,7 +11,10 @@ export default function Footer() {
     <footer className="footer glass-panel">
       <div className="container footer-container">
         <div className="footer-brand">
-          <h3 className="text-gradient">{t.footer.labName}</h3>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+            <img src="/brand/logoyeni.png" alt="Fırat Brain Mind Machine Lab logosu" width={50} height={50} style={{ objectFit: 'contain' }} />
+            <h3 className="text-gradient" style={{ marginBottom: 0, fontSize: '1.2rem', lineHeight: '1.2' }}>{t.footer.labName}</h3>
+          </div>
           <p>{t.footer.desc}</p>
         </div>
         

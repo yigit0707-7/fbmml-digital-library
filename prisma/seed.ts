@@ -1,77 +1,53 @@
-import { PrismaClient } from '@prisma/client'
-
+const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
 
 async function main() {
-  console.log('Seeding data...')
-  
-  // Create category
+  console.log('Seeding database...')
+
+  // Create Category
   const category = await prisma.category.upsert({
     where: { name: 'MATLAB ve Programlama' },
     update: {},
-    create: {
-      name: 'MATLAB ve Programlama',
-    },
+    create: { name: 'MATLAB ve Programlama' },
+  })
+  console.log('Category created:', category.name)
+
+  // Check if book exists
+  const existingBook = await prisma.book.findFirst({
+    where: { title: 'Artificial Intelligence and Deep Learning for MATLAB' }
   })
 
-  // Create book
-  await prisma.book.create({
-    data: {
-      title: 'Matlab_book',
-      author: 'Bilinmeyen Yazar',
-      description: 'MATLAB programlama ve mühendislik uygulamaları.',
-      publishYear: '2023',
-      tags: 'matlab, programlama, mühendislik',
-      pdfUrl: '/uploads/Matlab_book.pdf',
-      categoryId: category.id,
-    }
-  })
-
-  // Create Team Members
-  const team = [
-    {
-      name: 'Prof. Dr. Şengül Doğan',
-      title: 'Liderimiz / Laboratuvar Lideri',
-      role: 'Lider',
-      description: 'Fırat Brain Mind Machine Lab lideri ve kurucusu.',
-      orderIndex: 1
-    },
-    {
-      name: 'Prof. Dr. Türker Tuncer',
-      title: 'Akademik Ekip Üyesi',
-      role: 'Akademisyen',
-      description: 'Yapay zeka ve sinyal işleme uzmanı.',
-      orderIndex: 2
-    },
-    {
-      name: 'Prof. Dr. Mehmet Bayğın',
-      title: 'Akademik Ekip Üyesi',
-      role: 'Akademisyen',
-      description: 'Derin öğrenme ve bilgisayarlı görü uzmanı.',
-      orderIndex: 3
-    },
-    {
-      name: 'Ömer Faruk Göktaş',
-      title: 'Araştırma Ekibi Üyesi',
-      role: 'Araştırmacı',
-      description: 'Makine öğrenmesi ve veri bilimi araştırmacısı.',
-      orderIndex: 4
-    }
-  ]
-
-  for (const member of team) {
-    await prisma.teamMember.create({ data: member })
+  const bookData = {
+    title: 'Artificial Intelligence and Deep Learning for MATLAB',
+    author: 'Prof. Dr. Şengül Doğan, Prof. Dr. Türker Tuncer',
+    description: 'MATLAB ortamında yapay zekâ ve derin öğrenme uygulamalarına odaklanan akademik ve uygulamalı kaynak.',
+    publishYear: '2023',
+    tags: 'matlab, programlama, mühendislik',
+    coverUrl: '/covers/Matlab_book-cover.png',
+    pdfUrl: '/books/Matlab_book.pdf',
+    categoryId: category.id,
   }
 
-  console.log('Seeding complete!')
+  let book
+  if (existingBook) {
+    book = await prisma.book.update({
+      where: { id: existingBook.id },
+      data: bookData
+    })
+    console.log('Book updated:', book.title)
+  } else {
+    book = await prisma.book.create({
+      data: bookData
+    })
+    console.log('Book created:', book.title)
+  }
 }
 
 main()
-  .then(async () => {
-    await prisma.$disconnect()
-  })
-  .catch(async (e) => {
+  .catch((e) => {
     console.error(e)
-    await prisma.$disconnect()
     process.exit(1)
+  })
+  .finally(async () => {
+    await prisma.$disconnect()
   })

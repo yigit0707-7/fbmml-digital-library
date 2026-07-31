@@ -34,6 +34,17 @@ export const en = {
     labDesc: 'An interdisciplinary academic research team conducting studies in brain signals, artificial intelligence, explainable machine learning, biomedical signal processing, and pattern recognition.',
     collaborativePubs: 'Collaborative Research and Highlighted Publications',
     viewPub: 'View Publication',
+    researchTags: [
+      'EEG Signal Processing',
+      'Explainable AI',
+      'Feature Engineering',
+      'Machine Learning',
+      'Deep Learning',
+      'Biomedical AI',
+      'Image & Signal Processing',
+      'Digital Forensics',
+      'Pattern Recognition'
+    ],
     profile: {
       biography: 'Biography',
       education: 'Education',
@@ -46,8 +57,8 @@ export const en = {
     }
   },
   footer: {
-    labName: 'Firat Brain Mind Machine Lab (FBMML)',
-    desc: 'Research in brain signals, artificial intelligence, and explainable computing.',
+    labName: 'Firat Brain Mind Machine Lab',
+    desc: 'Digital Library',
     links: 'Quick Links',
     researchAreas: 'Research Areas',
     publications: 'Publications'

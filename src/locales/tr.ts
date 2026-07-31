@@ -34,6 +34,17 @@ export const tr = {
     labDesc: 'Beyin sinyalleri, yapay zekâ, açıklanabilir makine öğrenmesi, biyomedikal sinyal işleme ve örüntü tanıma alanlarında disiplinler arası araştırmalar yürüten akademik araştırma ekibi.',
     collaborativePubs: 'Ortak Araştırmalar ve Öne Çıkan Yayınlar',
     viewPub: 'Yayını Görüntüle',
+    researchTags: [
+      'EEG Sinyal İşleme',
+      'Açıklanabilir Yapay Zekâ',
+      'Özellik Mühendisliği',
+      'Makine Öğrenmesi',
+      'Derin Öğrenme',
+      'Biyomedikal Yapay Zekâ',
+      'Görüntü ve Sinyal İşleme',
+      'Dijital Adli Bilişim',
+      'Örüntü Tanıma'
+    ],
     profile: {
       biography: 'Biyografi',
       education: 'Eğitim',
@@ -46,8 +57,8 @@ export const tr = {
     }
   },
   footer: {
-    labName: 'Fırat Brain Mind Machine Lab (FBMML)',
-    desc: 'Beyin sinyalleri, yapay zekâ ve açıklanabilir hesaplama araştırmaları.',
+    labName: 'Fırat Brain Mind Machine Lab',
+    desc: 'Dijital Kütüphane',
     links: 'Hızlı Bağlantılar',
     researchAreas: 'Araştırma Alanları',
     publications: 'Yayınlar'

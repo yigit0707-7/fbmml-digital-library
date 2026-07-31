@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# database
+*.db
+dev.db
+
+# Uploads (if any local remaining)
+public/uploads/*
+!public/uploads/.gitkeep
+prisma/dev.db
+extract.js
+update_book.ts
