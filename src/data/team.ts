@@ -65,17 +65,17 @@ export const teamData: TeamMember[] = [
     departmentTr: 'Adli Bilişim Mühendisliği',
     departmentEn: 'Digital Forensics Engineering',
     photo: '/team/sengul-dogan.jpg',
-    bioTr: 'Prof. Dr. Şengül Doğan, Fırat Üniversitesi Teknoloji Fakültesi Adli Bilişim Mühendisliği bölümünde görev yapan deneyimli bir araştırmacıdır. Çalışmaları ağırlıklı olarak yapay zekâ, açıklanabilir makine öğrenmesi, biyomedikal sinyal işleme, EEG dalgalarının analizi ve adli bilişim (digital forensics) uygulamaları üzerine yoğunlaşmıştır.',
-    bioEn: 'Prof. Dr. Şengül Doğan is an experienced researcher at Firat University, Faculty of Technology, Department of Digital Forensics Engineering. Her work primarily focuses on artificial intelligence, explainable machine learning, biomedical signal processing, EEG wave analysis, and digital forensics applications.',
+    bioTr: 'Prof. Dr. Şengül Doğan, Fırat Üniversitesi Teknoloji Fakültesi Adli Bilişim Mühendisliği bölümünde görev yapmaktadır. Akademik çalışmaları ağırlıklı olarak yapay zekâ, açıklanabilir makine öğrenmesi, biyomedikal sinyal işleme, EEG dalgalarının analizi ve adli bilişim (digital forensics) uygulamaları üzerine yoğunlaşmaktadır.',
+    bioEn: 'Prof. Dr. Şengül Doğan works at Firat University, Faculty of Technology, Department of Digital Forensics Engineering. Her academic studies primarily focus on artificial intelligence, explainable machine learning, biomedical signal processing, EEG wave analysis, and digital forensics applications.',
     educationTr: [
-      'Lisans: Fırat Üniversitesi, Bilgisayar Öğretmenliği (1998 - 2002)',
-      'Yüksek Lisans: Fırat Üniversitesi, Biyomühendislik (2004 - 2007)',
-      'Doktora: Fırat Üniversitesi, Elektrik-Elektronik Mühendisliği (2007 - 2011)'
+      'Lisans: Fırat Üniversitesi, Bilgisayar Öğretmenliği, 1998–2002',
+      'Yüksek Lisans: Fırat Üniversitesi, Biyomühendislik, 2004–2007',
+      'Doktora: Fırat Üniversitesi, Elektrik-Elektronik Mühendisliği, 2007–2011'
     ],
     educationEn: [
-      'BSc: Firat University, Computer Education (1998 - 2002)',
-      'MSc: Firat University, Bioengineering (2004 - 2007)',
-      'PhD: Firat University, Electrical and Electronics Engineering (2007 - 2011)'
+      'Bachelor\'s Degree: Fırat University, Computer Education, 1998–2002',
+      'Master\'s Degree: Fırat University, Bioengineering, 2004–2007',
+      'PhD: Fırat University, Electrical and Electronics Engineering, 2007–2011'
     ],
     researchAreasTr: ['Adli Bilişim', 'Görüntü İşleme', 'Bilgi Güvenliği', 'Biyomedikal Sinyal İşleme', 'EEG Analizi'],
     researchAreasEn: ['Digital Forensics', 'Image Processing', 'Information Security', 'Biomedical Signal Processing', 'EEG Analysis'],
@@ -104,13 +104,8 @@ export const teamData: TeamMember[] = [
         tag: 'Açıklanabilir YZ (Explainable AI)'
       }
     ],
-    links: {
-      academicProfile: 'https://avesis.firat.edu.tr/sengul',
-      academicProfileLabelTr: 'AVESİS',
-      academicProfileLabelEn: 'AVESİS',
-      orcid: 'https://orcid.org/0000-0002-3162-446X',
-    },
-    lastUpdated: '2026-07-28'
+    links: {},
+    lastUpdated: '2026-08-01'
   },
   {
     slug: 'turker-tuncer',
@@ -123,17 +118,19 @@ export const teamData: TeamMember[] = [
     departmentTr: 'Adli Bilişim Mühendisliği',
     departmentEn: 'Digital Forensics Engineering',
     photo: '/team/turker-tuncer.png',
-    bioTr: 'Prof. Dr. Türker Tuncer, makine öğrenmesi, öznitelik mühendisliği (feature engineering) ve biyomedikal sinyal analizi alanlarında uluslararası düzeyde etki yaratmış bir araştırmacıdır. Fırat Üniversitesi\'nde görev yapan Tuncer, özellikle karmaşık EEG sinyallerini işlemek için 1D Octal Pattern gibi özgün patern tabanlı yöntemlerin literatüre kazandırılmasında aktif rol oynamıştır.',
-    bioEn: 'Prof. Dr. Türker Tuncer conducts research in the fields of machine learning, feature engineering, and biomedical signal analysis. He works at Firat University.',
+    bioTr: 'Prof. Dr. Türker Tuncer, Fırat Üniversitesi\'nde görev yapmaktadır. Araştırma alanları makine öğrenmesi, öznitelik mühendisliği (feature engineering) ve biyomedikal sinyal analizini kapsamaktadır. Çalışmalarında karmaşık EEG sinyallerini işlemek için 1D Octal Pattern gibi patern tabanlı yöntemler üzerine odaklanmaktadır.',
+    bioEn: 'Prof. Dr. Türker Tuncer works at Firat University. His research areas include machine learning, feature engineering, and biomedical signal analysis. His studies focus on pattern-based methods such as 1D Octal Pattern for processing complex EEG signals.',
     educationTr: [
-      'Lisans: Fırat Üniversitesi, Bilgisayar Öğretmenliği (2005 - 2009) & Bilgisayar Mühendisliği (2013 - 2015)',
-      'Yüksek Lisans: Fırat Üniversitesi, Elektronik-Bilgisayar Eğitimi (2009 - 2011)',
-      'Doktora: Fırat Üniversitesi, Yazılım Mühendisliği (2012 - 2016)'
+      'Lisans: Fırat Üniversitesi, Bilgisayar Öğretmenliği, 2005–2009',
+      'Lisans: Fırat Üniversitesi, Bilgisayar Mühendisliği, 2013–2015',
+      'Yüksek Lisans: Fırat Üniversitesi, Elektronik-Bilgisayar Eğitimi, 2009–2011',
+      'Doktora: Fırat Üniversitesi, Yazılım Mühendisliği, 2012–2016'
     ],
     educationEn: [
-      'BSc: Firat University, Computer Education (2005 - 2009) & Computer Engineering (2013 - 2015)',
-      'MSc: Firat University, Electronics-Computer Education (2009 - 2011)',
-      'PhD: Firat University, Software Engineering (2012 - 2016)'
+      'Bachelor\'s Degree: Fırat University, Computer Education, 2005–2009',
+      'Bachelor\'s Degree: Fırat University, Computer Engineering, 2013–2015',
+      'Master\'s Degree: Fırat University, Electronics-Computer Education, 2009–2011',
+      'PhD: Fırat University, Software Engineering, 2012–2016'
     ],
     researchAreasTr: ['Öznitelik Mühendisliği', 'İnsan Davranışı Analizi', 'Yapay Zekâ', 'Derin Öğrenme'],
     researchAreasEn: ['Feature Engineering', 'Human Behavior Analysis', 'Artificial Intelligence', 'Deep Learning'],
@@ -155,21 +152,15 @@ export const teamData: TeamMember[] = [
         tag: 'Duygu Sınıflandırma (Emotion Classification)'
       }
     ],
-    links: {
-      academicProfile: 'https://avesis.firat.edu.tr/turkertuncer',
-      academicProfileLabelTr: 'AVESİS',
-      academicProfileLabelEn: 'AVESİS',
-      scholar: 'https://scholar.google.com/citations?user=G6XqD3QAAAAJ',
-      orcid: 'https://orcid.org/0000-0003-3848-8008',
-    },
-    lastUpdated: '2026-07-28'
+    links: {},
+    lastUpdated: '2026-08-01'
   },
   {
     slug: 'mehmet-baygin',
     fullName: 'Mehmet Baygın',
     academicTitle: 'Doç. Dr.',
-    labRoleTr: 'Akademik İş Birliği / Araştırmacı',
-    labRoleEn: 'Academic Collaborator / Researcher',
+    labRoleTr: 'Araştırmacı',
+    labRoleEn: 'Researcher',
     institutionTr: 'Erzurum Teknik Üniversitesi',
     institutionEn: 'Erzurum Technical University',
     departmentTr: 'Bilgisayar Mühendisliği',
@@ -178,81 +169,72 @@ export const teamData: TeamMember[] = [
     bioTr: 'Doç. Dr. Mehmet Baygın, Erzurum Teknik Üniversitesi Bilgisayar Mühendisliği Bölümü\'nde görev yapmaktadır. Akademik çalışmaları makine öğrenmesi, yapay zekâ, biyomedikal veri analizi, sinyal ve görüntü işleme ile özellik mühendisliği alanlarına odaklanmaktadır.',
     bioEn: 'Assoc. Prof. Dr. Mehmet Baygın works at Erzurum Technical University, Department of Computer Engineering. His academic studies focus on machine learning, artificial intelligence, biomedical data analysis, signal and image processing, and feature engineering.',
     educationTr: [
-      'Lisans: Fırat Üniversitesi, Bilgisayar Mühendisliği (2006 - 2010)',
-      'Yüksek Lisans: Fırat Üniversitesi, Bilgisayar Mühendisliği (2010 - 2013)',
-      'Doktora: Fırat Üniversitesi, Bilgisayar Mühendisliği (2013 - 2018)'
+      'Lisans: Fırat Üniversitesi, Bilgisayar Mühendisliği, 2006–2010',
+      'Yüksek Lisans: Fırat Üniversitesi, Bilgisayar Mühendisliği, 2010–2013',
+      'Doktora: Fırat Üniversitesi, Bilgisayar Mühendisliği, 2013–2018'
     ],
     educationEn: [
-      'BSc: Firat University, Computer Engineering (2006 - 2010)',
-      'MSc: Firat University, Computer Engineering (2010 - 2013)',
-      'PhD: Firat University, Computer Engineering (2013 - 2018)'
+      'Bachelor\'s Degree: Fırat University, Computer Engineering, 2006–2010',
+      'Master\'s Degree: Fırat University, Computer Engineering, 2010–2013',
+      'PhD: Fırat University, Computer Engineering, 2013–2018'
     ],
     researchAreasTr: ['Bilgisayar Bilimleri', 'Makine Öğrenmesi', 'Görüntü İşleme', 'Sağlık Bilişimi'],
     researchAreasEn: ['Computer Science', 'Machine Learning', 'Image Processing', 'Health Informatics'],
-    selectedPublications: [
-      ],
-    links: {
-      orcid: 'https://orcid.org/0000-0003-4457-5503',
-    },
-    lastUpdated: '2026-07-28'
+    selectedPublications: [],
+    links: {},
+    lastUpdated: '2026-08-01'
   },
   {
     slug: 'omer-faruk-goktas',
     fullName: 'Ömer Faruk Göktaş',
     academicTitle: 'Öğr. Gör. Dr.',
-    labRoleTr: 'Akademik İş Birliği / Araştırmacı',
-    labRoleEn: 'Academic Collaborator / Researcher',
+    labRoleTr: 'Araştırmacı',
+    labRoleEn: 'Researcher',
     institutionTr: 'Ankara Yıldırım Beyazıt Üniversitesi',
     institutionEn: 'Ankara Yıldırım Beyazıt University',
     departmentTr: 'Elektronik ve Otomasyon',
     departmentEn: 'Electronics and Automation',
     photo: '/team/omer-faruk-goktas.jpg',
-    bioTr: 'Öğr. Gör. Dr. Ömer Faruk Göktaş, Ankara Yıldırım Beyazıt Üniversitesi Teknik Bilimler MYO Elektronik ve Otomasyon Bölümü\'nde görev almaktadır. Veri bilimi, elektronik sistemler ve otonom süreçler üzerine yoğunlaşan Göktaş, Akademik çalışmaları veri bilimi, elektronik sistemler, makine öğrenmesi ve otonom süreçler üzerine yoğunlaşmaktadır.',
-    bioEn: 'Lecturer Dr. Ömer Faruk Göktaş works at Ankara Yıldırım Beyazıt University, Vocational School of Technical Sciences, Department of Electronics and Automation. Focusing on data science, electronic systems, and autonomous processes, His academic studies focus on data science, electronic systems, machine learning, and autonomous processes.',
+    bioTr: 'Öğr. Gör. Dr. Ömer Faruk Göktaş, Ankara Yıldırım Beyazıt Üniversitesi Teknik Bilimler MYO Elektronik ve Otomasyon Bölümü\'nde görev yapmaktadır. Akademik çalışmaları veri bilimi, elektronik sistemler, makine öğrenmesi ve otonom süreçler üzerine yoğunlaşmaktadır.',
+    bioEn: 'Lecturer Dr. Ömer Faruk Göktaş works at Ankara Yıldırım Beyazıt University, Vocational School of Technical Sciences, Department of Electronics and Automation. His academic studies focus on data science, electronic systems, machine learning, and autonomous processes.',
     educationTr: [
-      'Lisans: Fırat Üniversitesi, Elektrik-Elektronik Mühendisliği (2008 - 2012)',
-      'Yüksek Lisans: Gazi Üniversitesi, Elektrik-Elektronik Mühendisliği (2015 - 2018)',
-      'Doktora: Ankara Yıldırım Beyazıt Üniversitesi, Elektrik-Elektronik Mühendisliği (2018 - 2025)'
+      'Lisans: Fırat Üniversitesi, Elektrik-Elektronik Mühendisliği, 2008–2012',
+      'Yüksek Lisans: Gazi Üniversitesi, Elektrik-Elektronik Mühendisliği, 2015–2018',
+      'Doktora: Ankara Yıldırım Beyazıt Üniversitesi, Elektrik-Elektronik Mühendisliği, 2018–2025'
     ],
     educationEn: [
-      'BSc: Firat University, Electrical and Electronics Engineering (2008 - 2012)',
-      'MSc: Gazi University, Electrical and Electronics Engineering (2015 - 2018)',
-      'PhD: Ankara Yıldırım Beyazıt University, Electrical and Electronics Engineering (2018 - 2025)'
+      'Bachelor\'s Degree: Fırat University, Electrical and Electronics Engineering, 2008–2012',
+      'Master\'s Degree: Gazi University, Electrical and Electronics Engineering, 2015–2018',
+      'PhD: Ankara Yıldırım Beyazıt University, Electrical and Electronics Engineering, 2018–2025'
     ],
     researchAreasTr: ['Elektronik', 'Otomasyon', 'Veri Bilimi', 'Makine Öğrenmesi'],
     researchAreasEn: ['Electronics', 'Automation', 'Data Science', 'Machine Learning'],
-    selectedPublications: [
-      ],
-    links: {
-      academicProfile: 'https://avesis.aybu.edu.tr/ofgoktas',
-      academicProfileLabelTr: 'AVESİS',
-      academicProfileLabelEn: 'AVESİS',
-      orcid: 'https://orcid.org/0000-0002-6072-3097',
-    },
-    lastUpdated: '2026-07-28'
+    selectedPublications: [],
+    links: {},
+    lastUpdated: '2026-08-01'
   },
   {
     slug: 'burak-tasci',
     fullName: 'Burak Taşcı',
     academicTitle: 'Doç. Dr.',
-    labRoleTr: 'Akademik İş Birliği / Araştırmacı',
-    labRoleEn: 'Academic Collaborator / Researcher',
+    labRoleTr: 'Araştırmacı',
+    labRoleEn: 'Researcher',
     institutionTr: 'Fırat Üniversitesi',
     institutionEn: 'Firat University',
     departmentTr: 'Elektrik ve Enerji Bölümü, Elektrik Programı',
     departmentEn: 'Department of Electricity and Energy, Electricity Program',
     photo: '/team/burak-tasci.png',
-    bioTr: 'Doç. Dr. Burak Taşcı, Fırat Üniversitesi Teknik Bilimler Meslek Yüksekokulu, Elektrik ve Enerji Bölümünde görev almaktadır. Uzmanlık alanı yapay zekâ ve derin öğrenme üzerine yoğunlaşmıştır.',
-    bioEn: 'Assoc. Prof. Dr. Burak Taşcı works at Firat University, Vocational School of Technical Sciences, Department of Electricity and Energy. His expertise focuses on artificial intelligence and deep learning.',
+    bioTr: 'Doç. Dr. Burak Taşcı, Fırat Üniversitesi Teknik Bilimler Meslek Yüksekokulu, Elektrik ve Enerji Bölümü\'nde görev yapmaktadır. Araştırmaları yapay zekâ ve derin öğrenme üzerine yoğunlaşmaktadır.',
+    bioEn: 'Assoc. Prof. Dr. Burak Taşcı works at Firat University, Vocational School of Technical Sciences, Department of Electricity and Energy. His research focuses on artificial intelligence and deep learning.',
     educationTr: [
-      'Lisans: Fırat Üniversitesi, Elektrik-Elektronik Mühendisliği (2003 - 2007)',
-      'Yüksek Lisans: Fırat Üniversitesi, Elektrik-Elektronik Mühendisliği (2010 - 2015)',
-      'Doktora: Fırat Üniversitesi, Elektrik-Elektronik Mühendisliği (2017 - 2021)'
+      'Lisans: Fırat Üniversitesi, Elektrik-Elektronik Mühendisliği, 2003–2007',
+      'Yüksek Lisans: Fırat Üniversitesi, Elektrik-Elektronik Mühendisliği, 2010–2015',
+      'Doktora: Fırat Üniversitesi, Elektrik-Elektronik Mühendisliği, 2017–2021'
     ],
     educationEn: [
-      'BSc: Firat University, Electrical and Electronics Engineering (2003 - 2007)',
-      'MSc: Firat University, Electrical and Electronics Engineering (2010 - 2015)',
-      'PhD: Firat University, Electrical and Electronics Engineering (2017 - 2021)'
+      'Bachelor\'s Degree: Fırat University, Electrical and Electronics Engineering, 2003–2007',
+      'Master\'s Degree: Fırat University, Electrical and Electronics Engineering, 2010–2015',
+      'PhD: Fırat University, Electrical and Electronics Engineering, 2017–2021'
     ],
     researchAreasTr: ['Yapay Zekâ', 'Derin Öğrenme'],
     researchAreasEn: ['Artificial Intelligence', 'Deep Learning'],
@@ -267,33 +249,29 @@ export const teamData: TeamMember[] = [
         tag: 'Yapay Zekâ (Artificial Intelligence)'
       }
     ],
-    links: {
-      academicProfile: 'https://abs.firat.edu.tr/tr/btasci',
-      academicProfileLabelTr: 'Fırat ABS',
-      academicProfileLabelEn: 'Academic Profile',
-    },
-    lastUpdated: '2026-07-31'
+    links: {},
+    lastUpdated: '2026-08-01'
   },
   {
     slug: 'irem-tasci',
     fullName: 'İrem Taşcı',
     academicTitle: 'Doç. Dr.',
-    labRoleTr: 'Akademik İş Birliği / Araştırmacı',
-    labRoleEn: 'Academic Collaborator / Researcher',
+    labRoleTr: 'Araştırmacı',
+    labRoleEn: 'Researcher',
     institutionTr: 'Fırat Üniversitesi',
     institutionEn: 'Firat University',
     departmentTr: 'Tıp Fakültesi, Nöroloji',
     departmentEn: 'Faculty of Medicine, Neurology',
     photo: '/team/irem-tasci.jpg',
-    bioTr: 'Doç. Dr. İrem Taşcı, Fırat Üniversitesi Tıp Fakültesi Dahili Tıp Bilimleri, Nöroloji bölümünde görev almaktadır. Nöroloji alanında uzmanlaşmıştır.',
-    bioEn: 'Assoc. Prof. Dr. İrem Taşcı works at Firat University, Faculty of Medicine, Internal Medical Sciences, Department of Neurology. She specializes in Neurology.',
+    bioTr: 'Doç. Dr. İrem Taşcı, Fırat Üniversitesi Tıp Fakültesi Dahili Tıp Bilimleri, Nöroloji bölümünde görev yapmaktadır. Araştırmaları nöroloji alanına odaklanmaktadır.',
+    bioEn: 'Assoc. Prof. Dr. İrem Taşcı works at Firat University, Faculty of Medicine, Internal Medical Sciences, Department of Neurology. Her research focuses on neurology.',
     educationTr: [
-      'Tıp eğitimi: Fırat Üniversitesi Tıp Fakültesi (2003 - 2009)',
-      'Nöroloji uzmanlığı: Fırat Üniversitesi Tıp Fakültesi (2009 - 2014)'
+      'Tıp Eğitimi: Fırat Üniversitesi Tıp Fakültesi, 2003–2009',
+      'Nöroloji Uzmanlığı: Fırat Üniversitesi Tıp Fakültesi, 2009–2014'
     ],
     educationEn: [
-      'MD: Firat University Faculty of Medicine (2003 - 2009)',
-      'Neurology specialization: Firat University Faculty of Medicine (2009 - 2014)'
+      'Medical Degree: Fırat University Faculty of Medicine, 2003–2009',
+      'Neurology Residency: Fırat University Faculty of Medicine, 2009–2014'
     ],
     researchAreasTr: ['Nöroloji', 'Tıp Bilimleri'],
     researchAreasEn: ['Neurology', 'Medical Sciences'],
@@ -308,33 +286,29 @@ export const teamData: TeamMember[] = [
         tag: 'Nöroloji (Neurology)'
       }
     ],
-    links: {
-      academicProfile: 'https://abs.firat.edu.tr/tr/itasci',
-      academicProfileLabelTr: 'Fırat ABS',
-      academicProfileLabelEn: 'Academic Profile',
-    },
-    lastUpdated: '2026-07-31'
+    links: {},
+    lastUpdated: '2026-08-01'
   },
   {
     slug: 'gulay-tasci',
     fullName: 'Gülay Taşcı',
     academicTitle: 'Doç. Dr.',
-    labRoleTr: 'Akademik İş Birliği / Araştırmacı',
-    labRoleEn: 'Academic Collaborator / Researcher',
+    labRoleTr: 'Araştırmacı',
+    labRoleEn: 'Researcher',
     institutionTr: 'Elazığ Fethi Sekin Şehir Hastanesi',
     institutionEn: 'Elazığ Fethi Sekin City Hospital',
     departmentTr: 'Psikiyatri',
     departmentEn: 'Psychiatry',
     photo: '/team/gulay-tasci.png',
-    bioTr: 'Doç. Dr. Gülay Taşcı, Elazığ Fethi Sekin Şehir Hastanesi Psikiyatri bölümünde görev almaktadır.',
-    bioEn: 'Assoc. Prof. Dr. Gülay Taşcı works at the Psychiatry department of Elazığ Fethi Sekin City Hospital.',
+    bioTr: 'Doç. Dr. Gülay Taşcı, Elazığ Fethi Sekin Şehir Hastanesi Psikiyatri bölümünde görev yapmaktadır. Araştırma alanı psikiyatri üzerine yoğunlaşmaktadır.',
+    bioEn: 'Assoc. Prof. Dr. Gülay Taşcı works at the Psychiatry department of Elazığ Fethi Sekin City Hospital. Her research focuses on psychiatry.',
     educationTr: [
-      'Tıp eğitimi: Çukurova Üniversitesi Tıp Fakültesi (2007 - 2013)',
-      'Psikiyatri uzmanlığı: Fırat Üniversitesi Tıp Fakültesi (2014 - 2019)'
+      'Tıp Eğitimi: Çukurova Üniversitesi Tıp Fakültesi, 2006–2012',
+      'Psikiyatri Uzmanlığı: Fırat Üniversitesi Tıp Fakültesi, 2013–2017'
     ],
     educationEn: [
-      'MD: Çukurova University Faculty of Medicine (2007 - 2013)',
-      'Psychiatry specialization: Firat University Faculty of Medicine (2014 - 2019)'
+      'Medical Degree: Çukurova University Faculty of Medicine, 2006–2012',
+      'Psychiatry Residency: Fırat University Faculty of Medicine, 2013–2017'
     ],
     researchAreasTr: ['Psikiyatri'],
     researchAreasEn: ['Psychiatry'],
@@ -349,12 +323,7 @@ export const teamData: TeamMember[] = [
         tag: 'Psikiyatri (Psychiatry)'
       }
     ],
-    links: {
-      academicProfile: 'https://elazigsehir.saglik.gov.tr/EN-718555/specialist-gulay-tasci.html',
-      academicProfileLabelTr: 'Kurum Profili',
-      academicProfileLabelEn: 'Academic Profile',
-      orcid: 'https://orcid.org/0000-0003-2078-0182',
-    },
-    lastUpdated: '2026-07-31'
+    links: {},
+    lastUpdated: '2026-08-01'
   }
 ];

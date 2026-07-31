@@ -45,21 +45,23 @@ export default function ProfilePage({ params }: { params: Promise<{ slug: string
             <p className="profile-bio">{getLocalizedField(member, 'bio')}</p>
           </section>
 
-          <section className="profile-section glass-panel">
-            <h2><BookOpen size={20} className="section-icon" /> {t.team.profile.selectedPubs}</h2>
-            <div className="pubs-list">
-              {member.selectedPublications.map((pub, idx) => (
-                <div key={idx} className="pub-list-item">
-                  <span className="pub-tag">{pub.tag}</span>
-                  <h4 className="pub-title">{pub.title}</h4>
-                  <p className="pub-authors">{pub.authors}</p>
-                  <div className="pub-meta-bottom">
-                    <span>{pub.journal}, {pub.year}</span>
+          {member.selectedPublications && member.selectedPublications.length > 0 && (
+            <section className="profile-section glass-panel">
+              <h2><BookOpen size={20} className="section-icon" /> {t.team.profile.selectedPubs}</h2>
+              <div className="pubs-list">
+                {member.selectedPublications.map((pub, idx) => (
+                  <div key={idx} className="pub-list-item">
+                    <span className="pub-tag">{pub.tag}</span>
+                    <h4 className="pub-title">{pub.title}</h4>
+                    <p className="pub-authors">{pub.authors}</p>
+                    <div className="pub-meta-bottom">
+                      <span>{pub.journal}, {pub.year}</span>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </section>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
 
         <div className="sidebar-col">
