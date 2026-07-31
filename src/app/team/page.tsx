@@ -26,7 +26,8 @@ export default function TeamPage() {
         <div className="neural-bg"></div>
         <div className="container hero-content" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <img src="/brand/tbt-logo.png" alt="TBT Logo" style={{ width: '100%', maxWidth: '350px', height: 'auto', marginBottom: '2rem' }} />
-          <h2 className="hero-subtitle" style={{ marginTop: 0 }}>{t.team.labShort}</h2>
+          <h1 className="hero-title" style={{ marginTop: 0, fontSize: '2.5rem', color: 'var(--text-primary)' }}>Turkish Brain Team</h1>
+          <span className="badge" style={{ backgroundColor: 'var(--accent-primary)', color: 'white', padding: '0.2rem 0.5rem', borderRadius: '4px', fontSize: '0.8rem', marginBottom: '1rem' }}>{t.team.labShort}</span>
           <p className="hero-desc">{t.team.labDesc}</p>
           <div className="research-tags">
             {researchTags.map((tag, idx) => (

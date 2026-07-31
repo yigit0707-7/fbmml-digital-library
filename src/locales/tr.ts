@@ -12,13 +12,18 @@ export const tr = {
   },
   home: {
     title: 'Yeni Nesil Dijital Kütüphaneye Hoş Geldiniz',
-    subtitle: 'Binlerce kitap, makale ve dergi bir tık uzağınızda.',
+    subtitle: 'Akademik kaynaklara hızlı, düzenli ve kolay erişim.',
     exploreBtn: 'Kütüphaneyi Keşfet'
   },
   library: {
     title: 'Kütüphane',
     searchPlaceholder: 'Kitap adı veya yazar ara...',
-    readBtn: 'Kitabı Oku'
+    readBtn: 'Kitabı Oku',
+    viewAll: 'Tümünü Gör',
+    allCategories: 'Tüm Kategoriler',
+    sortAZ: 'A–Z Sırala',
+    sortNewest: 'En Yeniler',
+    noResults: 'Arama sonucu bulunamadı'
   },
   bookDetail: {
     backToLibrary: 'Kütüphaneye Dön',

@@ -31,7 +31,7 @@ export default function HomeClient({ books }: { books: any[] }) {
       <section className="recent-books">
         <div className="section-header">
           <h2>{t.nav.library}</h2>
-          <Link href="/library" className="view-all-link">{t.nav.library}</Link>
+          <Link href="/library" className="view-all-link">{t.library.viewAll}</Link>
         </div>
         
         <div className="books-grid">
@@ -39,7 +39,7 @@ export default function HomeClient({ books }: { books: any[] }) {
             <div key={book.id} className="book-card glass-panel">
               <div className="book-cover">
                 {book.coverUrl ? (
-                  <img src={book.coverUrl} alt={book.title} />
+                  <Image src={book.coverUrl} alt={book.title} width={300} height={400} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
                 ) : (
                   <div className="default-cover">
                     <Book size={48} className="default-cover-icon" />

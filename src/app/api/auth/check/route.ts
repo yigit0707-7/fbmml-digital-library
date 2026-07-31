@@ -1,11 +1,10 @@
 import { NextResponse } from 'next/server'
-import { cookies } from 'next/headers'
+import { getSession } from '@/lib/auth'
 
 export async function GET() {
-  const cookieStore = await cookies()
-  const adminSession = cookieStore.get('tbt-session')
+  const session = await getSession()
   
-  if (adminSession && adminSession.value === process.env.AUTH_SECRET) {
+  if (session && session.role === 'admin') {
     return NextResponse.json({ isAdmin: true })
   }
   

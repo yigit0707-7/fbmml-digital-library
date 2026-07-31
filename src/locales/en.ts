@@ -12,13 +12,18 @@ export const en = {
   },
   home: {
     title: 'Welcome to the Next-Gen Digital Library',
-    subtitle: 'Thousands of books, articles, and journals are just a click away.',
+    subtitle: 'Fast, organized, and easy access to academic resources.',
     exploreBtn: 'Explore Library'
   },
   library: {
     title: 'Library',
     searchPlaceholder: 'Search books or authors...',
-    readBtn: 'Read Book'
+    readBtn: 'Read Book',
+    viewAll: 'View All',
+    allCategories: 'All Categories',
+    sortAZ: 'Sort A–Z',
+    sortNewest: 'Newest',
+    noResults: 'No search results found'
   },
   bookDetail: {
     backToLibrary: 'Back to Library',

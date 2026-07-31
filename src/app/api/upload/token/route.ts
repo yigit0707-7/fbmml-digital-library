@@ -1,6 +1,7 @@
 import { handleUpload, type HandleUploadBody } from '@vercel/blob/client';
 import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
+import { getSession } from '@/lib/auth';
 
 export async function POST(request: Request): Promise<NextResponse> {
   const body = (await request.json()) as HandleUploadBody;
@@ -11,9 +12,8 @@ export async function POST(request: Request): Promise<NextResponse> {
       request,
       onBeforeGenerateToken: async (pathname) => {
         // Admin authentication check
-        const cookieStore = await cookies();
-        const adminSession = cookieStore.get('tbt-session');
-        if (!adminSession || adminSession.value !== process.env.AUTH_SECRET) {
+        const session = await getSession();
+        if (!session || session.role !== 'admin') {
           throw new Error('Unauthorized');
         }
 

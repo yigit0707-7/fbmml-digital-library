@@ -19,9 +19,9 @@ async function main() {
 
   const bookData = {
     title: 'Artificial Intelligence and Deep Learning for MATLAB',
-    author: 'Prof. Dr. Şengül Doğan, Prof. Dr. Türker Tuncer',
+    author: 'Türker Tuncer, Şengül Doğan, Ömer Faruk Göktaş, Yusuf Barut, Sümeyra Çanakça, İbrahim Yiğit Atalmış',
     description: 'MATLAB ortamında yapay zekâ ve derin öğrenme uygulamalarına odaklanan akademik ve uygulamalı kaynak.',
-    publishYear: '2023',
+    publishYear: '',
     tags: 'matlab, programlama, mühendislik',
     coverUrl: '/covers/Matlab_book-cover.png',
     pdfUrl: '/books/Matlab_book.pdf',

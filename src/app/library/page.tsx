@@ -7,6 +7,7 @@ export default async function LibraryPage() {
   let books: any[] = []
   let categories: any[] = []
 
+  let errorState = false;
   try {
     books = await prisma.book.findMany({
       include: { category: true },
@@ -17,8 +18,9 @@ export default async function LibraryPage() {
       orderBy: { name: 'asc' }
     })
   } catch (error) {
-    console.error('Database query failed during build/render:', error)
+    console.error('Database query failed during build/render') // don't log sensitive error details
+    errorState = true;
   }
 
-  return <LibraryClient initialBooks={books} categories={categories} />
+  return <LibraryClient initialBooks={books} categories={categories} dbError={errorState} />
 }
