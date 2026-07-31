@@ -188,7 +188,7 @@ export const teamData: TeamMember[] = [
     institutionEn: 'Ankara Yıldırım Beyazıt University',
     departmentTr: 'Elektronik ve Otomasyon',
     departmentEn: 'Electronics and Automation',
-    photo: '/team/omer-faruk-goktas.svg',
+    photo: '/team/omer-faruk-goktas.jpg',
     bioTr: 'Öğr. Gör. Dr. Ömer Faruk Göktaş, Ankara Yıldırım Beyazıt Üniversitesi Teknik Bilimler MYO Elektronik ve Otomasyon Bölümü\'nde görev almaktadır. Veri bilimi, elektronik sistemler ve otonom süreçler üzerine yoğunlaşan Göktaş, FBMML ekibi ile veri işleme ve makine öğrenmesi uygulamaları konularında araştırma iş birlikleri yürütmektedir.',
     bioEn: 'Lecturer Dr. Ömer Faruk Göktaş works at Ankara Yıldırım Beyazıt University, Vocational School of Technical Sciences, Department of Electronics and Automation. Focusing on data science, electronic systems, and autonomous processes, Göktaş conducts research collaborations with the FBMML team on data processing and machine learning applications.',
     educationTr: ['Ankara Yıldırım Beyazıt Üniversitesi'],
@@ -230,7 +230,17 @@ export const teamData: TeamMember[] = [
     educationEn: ['Firat University (BSc, MSc, PhD)'],
     researchAreasTr: ['Yapay Zekâ', 'Derin Öğrenme'],
     researchAreasEn: ['Artificial Intelligence', 'Deep Learning'],
-    selectedPublications: [],
+    selectedPublications: [
+      {
+        title: 'A Hybrid Deep Feature Fusion and CWINCA-Based Classification Framework for Thermal Fault Diagnosis in Photovoltaic Panels',
+        authors: 'Taşcı, B., et al.',
+        year: 2025,
+        journal: 'FUJECE',
+        doi: '10.62520/fujece.1757707',
+        url: 'https://doi.org/10.62520/fujece.1757707',
+        tag: 'Yapay Zekâ (Artificial Intelligence)'
+      }
+    ],
     links: [
       { name: 'AVESİS', url: 'https://abs.firat.edu.tr/tr/btasci', icon: 'university' }
     ],
@@ -256,7 +266,17 @@ export const teamData: TeamMember[] = [
     educationEn: ['Firat University'],
     researchAreasTr: ['Nöroloji', 'Tıp Bilimleri'],
     researchAreasEn: ['Neurology', 'Medical Sciences'],
-    selectedPublications: [],
+    selectedPublications: [
+      {
+        title: 'Association between attention deficit hyperactivity disorder and chronotype in adults with epilepsy',
+        authors: 'Taşcı, İ., et al.',
+        year: 2025,
+        journal: 'Cukurova Medical Journal',
+        doi: '10.17826/cumj.1686754',
+        url: 'https://doi.org/10.17826/cumj.1686754',
+        tag: 'Nöroloji (Neurology)'
+      }
+    ],
     links: [
       { name: 'AVESİS', url: 'https://abs.firat.edu.tr/tr/itasci', icon: 'university' }
     ],
@@ -282,7 +302,17 @@ export const teamData: TeamMember[] = [
     educationEn: ['Çukurova University (BSc)', 'Firat University (Specialization)'],
     researchAreasTr: ['Psikiyatri'],
     researchAreasEn: ['Psychiatry'],
-    selectedPublications: [],
+    selectedPublications: [
+      {
+        title: 'Misdiagnosis of Bipolar Disorder: Rare or Frequent?',
+        authors: 'Taşcı, G., et al.',
+        year: 2023,
+        journal: 'Genel Tıp Dergisi',
+        doi: '10.54005/geneltip.1178626',
+        url: 'https://doi.org/10.54005/geneltip.1178626',
+        tag: 'Psikiyatri (Psychiatry)'
+      }
+    ],
     links: [
       { name: 'Kurum Profili', url: 'https://elazigsehir.saglik.gov.tr/EN-718555/specialist-gulay-tasci.html', icon: 'hospital' },
       { name: 'ORCID', url: 'https://orcid.org/0000-0003-2078-0182', icon: 'orcid' }

@@ -27,7 +27,7 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-[data-theme="dark"] {
+.dark {
   --bg-primary: #0a0e17; /* Deep navy / black */
   --bg-secondary: #121826; /* Anthracite */
   --bg-glass: rgba(18, 24, 38, 0.6);

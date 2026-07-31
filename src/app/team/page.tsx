@@ -55,15 +55,14 @@ export default function TeamPage() {
             <div className="member-info">
               <h3 className="member-name">{leader.academicTitle} {leader.fullName}</h3>
               <div className="member-title">
-                <Award size={18} className="icon-accent" />
-                <span>{getLocalizedField(leader, 'labRole')}</span>
+                 {getLocalizedField(leader, 'researchAreas').slice(0,3).map((tag: string) => <span key={tag} className="research-tag-small">{tag}</span>)}
               </div>
               <div className="member-institution">
                 {getLocalizedField(leader, 'institution')} • {getLocalizedField(leader, 'department')}
               </div>
               <p className="member-bio-short">{getLocalizedField(leader, 'bio').substring(0, 160)}...</p>
             </div>
-            <div className="view-profile-hint"><ArrowRight size={20} /></div>
+              <span className="profile-btn">{language === 'tr' ? "Profili İncele" : "View Profile"}</span>
           </Link>
         </div>
 
@@ -76,13 +75,15 @@ export default function TeamPage() {
               <div className="member-info">
                 <h3 className="member-name">{member.academicTitle} {member.fullName}</h3>
                 <div className="member-title">
-                  <span>{getLocalizedField(member, 'labRole')}</span>
+                   {getLocalizedField(member, 'researchAreas').slice(0,3).map((tag: string) => <span key={tag} className="research-tag-small">{tag}</span>)}
                 </div>
                 <div className="member-institution-badge">
                   {getLocalizedField(member, 'institution')}
                 </div>
               </div>
-              <div className="view-profile-hint"><ArrowRight size={20} /></div>
+              <div style={{textAlign: "center", width: "100%"}}>
+                <span className="profile-btn">{language === 'tr' ? "Profili İncele" : "View Profile"}</span>
+              </div>
             </Link>
           ))}
         </div>

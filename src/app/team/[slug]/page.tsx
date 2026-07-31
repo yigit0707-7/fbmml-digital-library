@@ -32,7 +32,6 @@ export default function ProfilePage({ params }: { params: Promise<{ slug: string
         </div>
         <div className="profile-header-info">
           <h1 className="profile-name">{member.academicTitle} {member.fullName}</h1>
-          <div className="profile-role">{getLocalizedField(member, 'labRole')}</div>
           <div className="profile-institution">
             <MapPin size={18} /> {getLocalizedField(member, 'institution')} • {getLocalizedField(member, 'department')}
           </div>

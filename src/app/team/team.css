@@ -23,7 +23,7 @@
   z-index: 1;
 }
 
-[data-theme="dark"] .neural-bg {
+.dark .neural-bg {
   opacity: 0.1;
 }
 
@@ -136,6 +136,7 @@
 .member-photo {
   border-radius: var(--radius-full);
   object-fit: cover;
+  object-position: center top;
   border: 2px solid var(--border-color);
   background: var(--bg-secondary);
 }
@@ -155,15 +156,30 @@
 
 .member-title {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
-  color: var(--accent-primary);
-  font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .leader-card .member-title {
-  font-size: 1.2rem;
+  justify-content: flex-start;
+}
+
+.profile-btn {
+  display: inline-block;
+  background: var(--accent-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  transition: var(--transition);
+}
+
+.profile-btn:hover {
+  background: var(--accent-secondary);
 }
 
 .member-institution {
