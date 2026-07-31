@@ -147,10 +147,11 @@ export const teamData: TeamMember[] = [
       },
       {
         title: 'Automated accurate emotion classification using Clefia pattern-based features with EEG signals',
-        authors: 'Tuncer, T., Dogan, S., et al.',
-        year: 2022,
-        journal: 'Cognitive Neurodynamics',
-        url: 'https://link.springer.com/article/10.1007/s11571-022-09789-2',
+        authors: 'Abdullah Doğan, Prabal Datta Barua, Mehmet Baygın, Türker Tuncer, Şengül Doğan, Orhan Yaman, Ali Hikmet Doğru, U. Rajendra Acharya',
+        year: 2024,
+        journal: 'International Journal of Healthcare Management',
+        doi: '10.1080/20479700.2022.2141694',
+        url: 'https://doi.org/10.1080/20479700.2022.2141694',
         tag: 'Duygu Sınıflandırma (Emotion Classification)'
       }
     ],
