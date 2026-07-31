@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { Search, Book } from 'lucide-react'
+import { useLanguage } from '@/context/LanguageContext'
 import './library.css'
 
 type Book = {
@@ -22,6 +23,7 @@ export default function LibraryClient({ initialBooks, categories }: { initialBoo
   const [search, setSearch] = useState('')
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [sortBy, setSortBy] = useState<'title' | 'newest'>('title')
+  const { t } = useLanguage()
 
   const filteredBooks = initialBooks
     .filter(book => selectedCategory === 'all' || book.category.id === selectedCategory)
@@ -34,8 +36,7 @@ export default function LibraryClient({ initialBooks, categories }: { initialBoo
   return (
     <div className="container" style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
       <div className="library-header text-center">
-        <h1>Tüm Kitaplar</h1>
-        <p className="text-secondary">Kütüphanedeki tüm eserleri inceleyin ve arayın.</p>
+        <h1>{t.library.title}</h1>
       </div>
 
       <div className="library-filters glass-panel animate-fade-in">
@@ -43,7 +44,7 @@ export default function LibraryClient({ initialBooks, categories }: { initialBoo
           <Search size={20} className="search-icon" />
           <input 
             type="text" 
-            placeholder="Kitap veya yazar ara..." 
+            placeholder={t.library.searchPlaceholder} 
             className="search-input"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -82,7 +83,7 @@ export default function LibraryClient({ initialBooks, categories }: { initialBoo
               ) : (
                 <div className="default-cover">
                   <Book size={48} className="default-cover-icon" />
-                  <span>FBMML</span>
+                  <span>{t.bookDetail.noCover}</span>
                 </div>
               )}
             </div>
@@ -91,7 +92,7 @@ export default function LibraryClient({ initialBooks, categories }: { initialBoo
               <h3 className="book-title">{book.title}</h3>
               <p className="book-author">{book.author}</p>
               <Link href={`/book/${book.id}`} className="btn-secondary read-btn">
-                Kitabı İncele
+                {t.library.readBtn}
               </Link>
             </div>
           </div>

@@ -1,42 +1,114 @@
-import { prisma } from '@/lib/prisma'
-import './team.css'
-import { User, Award, BookOpen } from 'lucide-react'
+"use client";
 
-export default async function TeamPage() {
-  const teamMembers = await prisma.teamMember.findMany({
-    orderBy: { orderIndex: 'asc' }
-  })
+import Link from 'next/link';
+import Image from 'next/image';
+import { useLanguage } from '@/context/LanguageContext';
+import { teamData, TeamMember } from '@/data/team';
+import { collaborativePublications } from '@/data/publications';
+import { Award, ArrowRight, ExternalLink } from 'lucide-react';
+import './team.css';
+
+export default function TeamPage() {
+  const { language, t } = useLanguage();
+
+  const getLocalizedField = (obj: any, field: string) => {
+    return obj[`${field}${language === 'tr' ? 'Tr' : 'En'}`];
+  };
+
+  const leader = teamData.find(m => m.slug === 'sengul-dogan') as TeamMember;
+  const members = teamData.filter(m => m.slug !== 'sengul-dogan');
+
+  const researchTags = [
+    'EEG Sinyal İşleme',
+    'Açıklanabilir Yapay Zekâ',
+    'Özellik Mühendisliği',
+    'Makine Öğrenmesi',
+    'Derin Öğrenme',
+    'Biyomedikal Yapay Zekâ',
+    'Görüntü ve Sinyal İşleme',
+    'Dijital Adli Bilişim',
+    'Örüntü Tanıma'
+  ];
 
   return (
-    <div className="container animate-fade-in" style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
-      <div className="team-header text-center">
-        <h1 className="text-gradient">Fırat Brain Mind Machine Lab</h1>
-        <p className="team-subtitle">Çalışma Ekibimiz</p>
-      </div>
+    <div className="team-page animate-fade-in">
+      <section className="hero-section">
+        <div className="neural-bg"></div>
+        <div className="container hero-content">
+          <h1 className="hero-title text-gradient">{t.team.labName}</h1>
+          <h2 className="hero-subtitle">{t.team.labShort}</h2>
+          <p className="hero-desc">{t.team.labDesc}</p>
+          <div className="research-tags">
+            {researchTags.map((tag, idx) => (
+              <span key={idx} className="research-tag">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      <div className="team-grid">
-        {teamMembers.map(member => (
-          <div key={member.id} className={`team-card glass-panel ${member.role === 'Lider' ? 'leader-card' : ''}`}>
-            <div className="member-photo">
-              {member.photoUrl ? (
-                <img src={member.photoUrl} alt={member.name} />
-              ) : (
-                <div className="default-photo">
-                  <User size={64} className="default-photo-icon" />
-                </div>
-              )}
+      <section className="team-section container">
+        <div className="leader-container">
+          <Link href={`/team/${leader.slug}`} className="team-card leader-card glass-panel">
+            <div className="member-photo-wrapper">
+              <Image src={leader.photo} alt={`${leader.fullName} profil fotoğrafı`} width={200} height={200} className="member-photo" />
             </div>
             <div className="member-info">
-              <h3 className="member-name">{member.name}</h3>
+              <h3 className="member-name">{leader.academicTitle} {leader.fullName}</h3>
               <div className="member-title">
-                <Award size={16} />
-                <span>{member.title}</span>
+                <Award size={18} className="icon-accent" />
+                <span>{getLocalizedField(leader, 'labRole')}</span>
               </div>
-              <p className="member-desc">{member.description}</p>
+              <div className="member-institution">
+                {getLocalizedField(leader, 'institution')} • {getLocalizedField(leader, 'department')}
+              </div>
+              <p className="member-bio-short">{getLocalizedField(leader, 'bio').substring(0, 160)}...</p>
             </div>
-          </div>
-        ))}
-      </div>
+            <div className="view-profile-hint"><ArrowRight size={20} /></div>
+          </Link>
+        </div>
+
+        <div className="members-grid">
+          {members.map(member => (
+            <Link key={member.slug} href={`/team/${member.slug}`} className="team-card member-card glass-panel">
+              <div className="member-photo-wrapper">
+                <Image src={member.photo} alt={`${member.fullName} profil fotoğrafı`} width={150} height={150} className="member-photo" />
+              </div>
+              <div className="member-info">
+                <h3 className="member-name">{member.academicTitle} {member.fullName}</h3>
+                <div className="member-title">
+                  <span>{getLocalizedField(member, 'labRole')}</span>
+                </div>
+                <div className="member-institution-badge">
+                  {getLocalizedField(member, 'institution')}
+                </div>
+              </div>
+              <div className="view-profile-hint"><ArrowRight size={20} /></div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="pubs-section container">
+        <h3 className="section-title">{t.team.collaborativePubs}</h3>
+        <div className="pubs-grid">
+          {collaborativePublications.map(pub => (
+            <div key={pub.id} className="pub-card glass-panel">
+              <span className="pub-tag">{pub.tag}</span>
+              <h4 className="pub-title">{pub.title}</h4>
+              <p className="pub-authors">{pub.authors.join(', ')}</p>
+              <div className="pub-meta">
+                <span className="pub-year">{pub.year}</span>
+                <span className="pub-journal">{pub.journal}</span>
+              </div>
+              {pub.url && (
+                <a href={pub.url} target="_blank" rel="noopener noreferrer" className="pub-link">
+                  <ExternalLink size={16} /> {t.team.viewPub}
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
-  )
+  );
 }
