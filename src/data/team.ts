@@ -82,10 +82,11 @@ export const teamData: TeamMember[] = [
     selectedPublications: [
       {
         title: 'Automated accurate emotion classification using Clefia pattern-based features with EEG signals',
-        authors: 'Tuncer, T., Dogan, S., et al.',
-        year: 2022,
-        journal: 'Cognitive Neurodynamics',
-        url: 'https://link.springer.com/article/10.1007/s11571-022-09789-2',
+        authors: 'Abdullah Doğan, Prabal Datta Barua, Mehmet Baygın, Türker Tuncer, Şengül Doğan, Orhan Yaman, Ali Hikmet Doğru, U. Rajendra Acharya',
+        year: 2024,
+        journal: 'International Journal of Healthcare Management',
+        doi: '10.1080/20479700.2022.2141694',
+        url: 'https://doi.org/10.1080/20479700.2022.2141694',
         tag: 'Duygu Sınıflandırma (Emotion Classification)'
       },
       {
@@ -136,11 +137,12 @@ export const teamData: TeamMember[] = [
     researchAreasEn: ['Feature Engineering', 'Human Behavior Analysis', 'Artificial Intelligence', 'Deep Learning'],
     selectedPublications: [
       {
-        title: 'A new dataset for EEG abnormality detection MTOUH',
-        authors: 'Tuncer, T., Dogan, S., et al.',
+        title: 'A new dataset for EEG abnormality detection: MTOUH',
+        authors: 'İrem Taşcı, Burak Taşcı, Şengül Doğan, Türker Tuncer',
         year: 2022,
-        journal: 'Turkish Journal of Electrical Engineering and Computer Sciences',
-        url: 'https://dergipark.org.tr/en/pub/tjeecs/issue/75429/1179619',
+        journal: 'Turkish Journal of Science and Technology, 17(1), 135–141',
+        doi: '10.55525/tjst.1074540',
+        url: 'https://doi.org/10.55525/tjst.1074540',
         tag: 'Veri Kümesi (Dataset)'
       },
       {
@@ -195,8 +197,8 @@ export const teamData: TeamMember[] = [
     departmentTr: 'Elektronik ve Otomasyon',
     departmentEn: 'Electronics and Automation',
     photo: '/team/omer-faruk-goktas.jpg',
-    bioTr: 'Öğr. Gör. Dr. Ömer Faruk Göktaş, Ankara Yıldırım Beyazıt Üniversitesi Teknik Bilimler MYO Elektronik ve Otomasyon Bölümü\'nde görev yapmaktadır. Akademik çalışmaları veri bilimi, elektronik sistemler, makine öğrenmesi ve otonom süreçler üzerine yoğunlaşmaktadır.',
-    bioEn: 'Lecturer Dr. Ömer Faruk Göktaş works at Ankara Yıldırım Beyazıt University, Vocational School of Technical Sciences, Department of Electronics and Automation. His academic studies focus on data science, electronic systems, machine learning, and autonomous processes.',
+    bioTr: 'Öğr. Gör. Dr. Ömer Faruk Göktaş, Ankara Yıldırım Beyazıt Üniversitesi Teknik Bilimler Meslek Yüksekokulu Elektronik ve Otomasyon Bölümü’nde görev yapmaktadır. Akademik çalışmaları elektrik-elektronik mühendisliği, sinyal işleme, makine öğrenmesi, derin öğrenme ve RF/mikrodalga sistemleri alanlarına odaklanmaktadır.',
+    bioEn: 'Lecturer Dr. Ömer Faruk Göktaş works at Ankara Yıldırım Beyazıt University, Vocational School of Technical Sciences, Department of Electronics and Automation. His academic studies focus on electrical and electronics engineering, signal processing, machine learning, deep learning, and RF/microwave systems.',
     educationTr: [
       'Lisans: Fırat Üniversitesi, Elektrik-Elektronik Mühendisliği, 2008–2012',
       'Yüksek Lisans: Gazi Üniversitesi, Elektrik-Elektronik Mühendisliği, 2015–2018',
@@ -207,8 +209,8 @@ export const teamData: TeamMember[] = [
       'Master\'s Degree: Gazi University, Electrical and Electronics Engineering, 2015–2018',
       'PhD: Ankara Yıldırım Beyazıt University, Electrical and Electronics Engineering, 2018–2025'
     ],
-    researchAreasTr: ['Elektronik', 'Otomasyon', 'Veri Bilimi', 'Makine Öğrenmesi'],
-    researchAreasEn: ['Electronics', 'Automation', 'Data Science', 'Machine Learning'],
+    researchAreasTr: ['Elektrik-Elektronik Mühendisliği', 'Sinyal İşleme', 'Makine Öğrenmesi', 'Derin Öğrenme', 'RF / Mikrodalga'],
+    researchAreasEn: ['Electrical and Electronics Engineering', 'Signal Processing', 'Machine Learning', 'Deep Learning', 'RF / Microwave'],
     selectedPublications: [],
     links: {},
     lastUpdated: '2026-08-01'
@@ -241,9 +243,9 @@ export const teamData: TeamMember[] = [
     selectedPublications: [
       {
         title: 'A Hybrid Deep Feature Fusion and CWINCA-Based Classification Framework for Thermal Fault Diagnosis in Photovoltaic Panels',
-        authors: 'Taşcı, B., et al.',
+        authors: 'Taşcı, B.',
         year: 2025,
-        journal: 'FUJECE',
+        journal: 'Firat University Journal of Experimental and Computational Engineering, 4(3), 689–700',
         doi: '10.62520/fujece.1757707',
         url: 'https://doi.org/10.62520/fujece.1757707',
         tag: 'Yapay Zekâ (Artificial Intelligence)'
@@ -278,9 +280,9 @@ export const teamData: TeamMember[] = [
     selectedPublications: [
       {
         title: 'Association between attention deficit hyperactivity disorder and chronotype in adults with epilepsy',
-        authors: 'Taşcı, İ., et al.',
+        authors: 'Kerim Uğur, Tunahan Sun, İrem Taşcı, Fatma Kartal',
         year: 2025,
-        journal: 'Cukurova Medical Journal',
+        journal: 'Cukurova Medical Journal, 50(3), 806–818',
         doi: '10.17826/cumj.1686754',
         url: 'https://doi.org/10.17826/cumj.1686754',
         tag: 'Nöroloji (Neurology)'
@@ -315,9 +317,9 @@ export const teamData: TeamMember[] = [
     selectedPublications: [
       {
         title: 'Misdiagnosis of Bipolar Disorder: Rare or Frequent?',
-        authors: 'Taşcı, G., et al.',
+        authors: 'Şuheda Kaya, Gülay Taşcı, Sevda Korkmaz, Murad Atmaca',
         year: 2023,
-        journal: 'Genel Tıp Dergisi',
+        journal: 'Genel Tıp Dergisi, 33(4), 372–376',
         doi: '10.54005/geneltip.1178626',
         url: 'https://doi.org/10.54005/geneltip.1178626',
         tag: 'Psikiyatri (Psychiatry)'
